@@ -10,7 +10,7 @@
     justify-content: center;
     align-items: center;
     max-width: 960px;
-    margin: 0 auto;
+    margin: 20px auto;
   }
 
   .sobre-mi-2 h2 {
@@ -22,11 +22,11 @@
   }
   
   .sobre-mi-text {
-    flex-basis: 65%;
+    flex-basis: 45%;
   }
   
   .sobre-mi-text p {
-    font-size: 1.2rem;
+    font-size: 1.0rem;
     line-height: 1.6;
     margin-bottom: 20px;
   }
