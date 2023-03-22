@@ -1,0 +1,67 @@
+/* Estilos para la sección "Sobre mi" */
+
+.sobre-mi-contenedor {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 80px auto;
+  }
+  
+  .foto-perfil {
+    border-radius: 50%;
+    height: 150px;
+    width: 150px;
+    object-fit: cover;
+    margin-bottom: 30px;
+  }
+  
+  .texto {
+    text-align: center;
+  }
+  
+  .texto h2 {
+    color: #333;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    font-weight: 700;
+    line-height: 1.2;
+  }
+  
+  .texto p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    margin-bottom: 30px;
+  }
+  
+  .redes-sociales {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .redes-sociales li {
+    margin: 0 10px;
+    font-size: 1.5rem;
+    line-height: 1;
+
+  }
+  
+  .redes-sociales li a {
+    color: #444444;
+    transition: color 0.3s ease-in-out;
+  }
+  
+  .redes-sociales li a:hover {
+    color: #6C63FF;
+  }
+
+  .curriculo-btn {
+    background-color: #6C63FF;
+    color: #FFFFFF;
+    border-radius: 70px;
+    padding: 8px 15px;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease-in-out;
+  }
