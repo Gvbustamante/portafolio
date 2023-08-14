@@ -43,33 +43,35 @@
   }
 
 @media (max-width: 768px) {
-  .sobre-mi-2 {
-    padding: 40px 0; /* Ajuste del padding vertical */
-    margin: 1rem 0; /* Ajuste del margen vertical */
+  .formaciones {
+    padding: 60px 0; /* Ajuste del padding vertical */
   }
   
-  .sobre-mi-content {
-    max-width: 80%; /* Reducción del ancho máximo */
-    margin: 10px auto; /* Ajuste del margen vertical */
-  }
-
-  .sobre-mi-2 h2 {
-    padding-left: 10%; /* Ajuste del padding izquierdo */
-    font-size: 32px; /* Reducción del tamaño de fuente */
-    margin: 10px; /* Ajuste del margen */
+  .formaciones h2 {
+    font-size: 28px; /* Reducción del tamaño de fuente */
+    margin-bottom: 40px; /* Ajuste del margen inferior */
   }
   
-  .sobre-mi-text {
-    flex-basis: 100%; /* Ocupar todo el ancho disponible */
+  .formaciones-container {
+    justify-content: center; /* Centrar elementos horizontalmente */
   }
   
-  .sobre-mi-text p {
-    font-size: 0.9rem; /* Reducción del tamaño de fuente */
-    margin-bottom: 10px; /* Ajuste del margen inferior */
+  .formacion {
+    width: 100%; /* Ancho al 100% para ocupar todo el espacio disponible */
+    max-width: 300px; /* Reducción del ancho máximo */
+    margin: 15px; /* Ajuste del margen */
+    margin-bottom: 30px; /* Reducción del margen inferior */
   }
   
-  .sobre-mi-image {
-    display: none; /* Ocultar la imagen en pantallas pequeñas */
+  .formacion img {
+    width: 120px; /* Reducción del tamaño de la imagen */
+    height: 120px; /* Reducción del tamaño de la imagen */
+    margin: 30px auto; /* Ajuste del margen */
+  }
+  
+  .formacion h4 {
+    font-size: 20px; /* Reducción del tamaño de fuente */
+    margin-bottom: 8px; /* Ajuste del margen inferior */
   }
 }
 
