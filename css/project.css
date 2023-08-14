@@ -87,3 +87,43 @@
     cursor: pointer;
     transition: background-color 0.2s ease-in-out;
   }
+
+@media (max-width: 680px) {
+  #experiencia {
+    padding: 60px 0;
+  }
+  
+  .experiencia-container {
+    justify-content: center;
+  }
+  
+  .proyecto {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    margin: 20px;
+  }
+  
+  .proyecto:hover {
+    transform: none;
+  }
+  
+  .proyecto h5 {
+    font-size: 18px;
+    margin: 15px 20px;
+  }
+  
+  .proyecto p {
+    font-size: 14px;
+    margin: 0 20px 15px;
+  }
+  
+  .btns {
+    justify-content: center;
+  }
+  
+  .demo-btn, .repositorio-btn {
+    font-size: 14px;
+    padding: 8px 16px;
+  }
+}
