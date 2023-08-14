@@ -40,14 +40,17 @@
     font-size: 1.3rem;
     margin-bottom: 10px;
     color: #333;
+    padding: 0 30px;
+
   }
 
   .formacion p {
     font-size: 1rem;
     margin-bottom: 10px;
     color: b6b6b6;
-  }
+    padding: 0 25px;
 
+  }
 
 
 @media (max-width: 768px) {
