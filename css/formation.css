@@ -76,18 +76,36 @@
 }
 
 @media (max-width: 680px) {
-  .sobre-mi-2 h2 {
-    font-size: 28px; /* Reducción adicional del tamaño de fuente */
+  .formaciones {
+    padding: 50px 0; /* Ajuste del padding vertical */
   }
-
-  .sobre-mi-text p {
-    font-size: 0.8rem; /* Reducción adicional del tamaño de fuente */
+  
+  .formaciones h2 {
+    font-size: 24px; /* Reducción del tamaño de fuente */
+    margin-bottom: 30px; /* Ajuste del margen inferior */
+  }
+  
+  .formaciones-container {
+    justify-content: center; /* Centrar elementos horizontalmente */
+  }
+  
+  .formacion {
+    width: 100%; /* Ancho al 100% para ocupar todo el espacio disponible */
+    max-width: 280px; /* Reducción del ancho máximo */
+    margin: 10px; /* Ajuste del margen */
+    margin-bottom: 20px; /* Reducción del margen inferior */
+  }
+  
+  .formacion img {
+    width: 100px; /* Reducción adicional del tamaño de la imagen */
+    height: 100px; /* Reducción adicional del tamaño de la imagen */
+    margin: 20px auto; /* Ajuste del margen */
+  }
+  
+  .formacion h4 {
+    font-size: 18px; /* Reducción del tamaño de fuente */
+    margin-bottom: 6px; /* Ajuste del margen inferior */
   }
 }
 
-
-  .formacion p {
-    font-size: 0.9rem;
-    color: #888;
-  }
   
