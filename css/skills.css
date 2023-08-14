@@ -70,4 +70,47 @@
       width: 100%;
     }
   }
+@media (max-width: 680px) {
+  .skills {
+    padding: 40px 0; /* Ajuste del padding vertical */
+    text-align: center;
+  }
+  
+  .skills h2 {
+    font-size: 32px; /* Reducción del tamaño de fuente */
+    margin-bottom: 30px; /* Ajuste del margen inferior */
+  }
+  
+  .skills-container {
+    gap: 30px; /* Reducción del espacio entre elementos */
+    margin-top: 20px; /* Ajuste del margen superior */
+  }
+  
+  .skill {
+    width: 120px; /* Reducción del ancho */
+    height: 120px; /* Reducción de la altura */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .skill:hover {
+    transform: none;
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.15);
+  }
+  
+  .skill-icon {
+    width: 40px; /* Reducción del tamaño */
+    height: 40px; /* Reducción del tamaño */
+    margin: 15px auto 8px auto; /* Ajuste del margen */
+  }
+  
+  .skill-icon {
+    font-size: 2em; /* Reducción del tamaño de fuente */
+  }
+  
+  .skill p {
+    margin-top: 8px; /* Ajuste del margen superior */
+    font-size: 12px; /* Reducción del tamaño de fuente */
+  }
+}
+
   
