@@ -41,7 +41,49 @@
     margin-bottom: 10px;
     color: #333;
   }
+
+@media (max-width: 768px) {
+  .sobre-mi-2 {
+    padding: 40px 0; /* Ajuste del padding vertical */
+    margin: 1rem 0; /* Ajuste del margen vertical */
+  }
   
+  .sobre-mi-content {
+    max-width: 80%; /* Reducción del ancho máximo */
+    margin: 10px auto; /* Ajuste del margen vertical */
+  }
+
+  .sobre-mi-2 h2 {
+    padding-left: 10%; /* Ajuste del padding izquierdo */
+    font-size: 32px; /* Reducción del tamaño de fuente */
+    margin: 10px; /* Ajuste del margen */
+  }
+  
+  .sobre-mi-text {
+    flex-basis: 100%; /* Ocupar todo el ancho disponible */
+  }
+  
+  .sobre-mi-text p {
+    font-size: 0.9rem; /* Reducción del tamaño de fuente */
+    margin-bottom: 10px; /* Ajuste del margen inferior */
+  }
+  
+  .sobre-mi-image {
+    display: none; /* Ocultar la imagen en pantallas pequeñas */
+  }
+}
+
+@media (max-width: 680px) {
+  .sobre-mi-2 h2 {
+    font-size: 28px; /* Reducción adicional del tamaño de fuente */
+  }
+
+  .sobre-mi-text p {
+    font-size: 0.8rem; /* Reducción adicional del tamaño de fuente */
+  }
+}
+
+
   .formacion p {
     font-size: 16px;
     color: #888;
