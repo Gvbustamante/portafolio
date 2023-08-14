@@ -65,3 +65,60 @@
     text-transform: uppercase;
     transition: background-color 0.3s ease-in-out;
   }
+
+@media (max-width: 768px) {
+  .sobre-mi-contenedor {
+    margin: 60px auto; /* Ajuste del margen vertical */
+  }
+  
+  .foto-perfil {
+    height: 120px; /* Reducción del tamaño */
+    width: 120px; /* Reducción del tamaño */
+    margin-bottom: 20px; /* Ajuste del margen inferior */
+  }
+  
+  .texto h2 {
+    font-size: 2rem; /* Reducción del tamaño de fuente */
+    margin-bottom: 15px; /* Ajuste del margen inferior */
+  }
+  
+  .texto p {
+    font-size: 1rem; /* Reducción del tamaño de fuente */
+    margin-bottom: 20px; /* Ajuste del margen inferior */
+  }
+  
+  .redes-sociales li {
+    margin: 0 8px; /* Reducción del margen horizontal */
+    font-size: 1.2rem; /* Reducción del tamaño de fuente */
+  }
+
+  .curriculo-btn {
+    padding: 6px 12px; /* Reducción del padding */
+    font-size: 1rem; /* Reducción del tamaño de fuente */
+  }
+}
+
+@media (max-width: 680px) {
+  .foto-perfil {
+    height: 100px; /* Reducción adicional del tamaño */
+    width: 100px; /* Reducción adicional del tamaño */
+  }
+  
+  .texto h2 {
+    font-size: 1.8rem; /* Reducción adicional del tamaño de fuente */
+    margin-bottom: 10px; /* Ajuste adicional del margen inferior */
+  }
+  
+  .texto p {
+    font-size: 0.9rem; /* Reducción adicional del tamaño de fuente */
+    margin-bottom: 15px; /* Ajuste adicional del margen inferior */
+  }
+  
+  .redes-sociales li {
+    font-size: 1rem; /* Reducción adicional del tamaño de fuente */
+  }
+
+  .curriculo-btn {
+    font-size: 0.9rem; /* Reducción adicional del tamaño de fuente */
+  }
+}
