@@ -42,7 +42,7 @@
 
   }
 
-@media (min-width: 720px) {
+@media (min-width: 680px) {
   .sobre-mi-2 {
     padding: 40px 0; /* Reducir el padding vertical */
     margin: 1rem 0; /* Reducir el margen vertical */
