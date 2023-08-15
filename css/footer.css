@@ -1,6 +1,8 @@
 #contacto {
     background-color: #f8f8f8;
     padding: 50px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     text-align: center;
   }
   
@@ -10,45 +12,35 @@
     color: #333;
     margin-bottom: 20px;
   }
+    
+#contacto p {
+     margin-bottom: 20px;
+
+}
   
-  #contacto form {
-    display: inline-block;
-    text-align: left;
-  }
-  
-  #contacto label {
-    display: block;
-    font-size: 18px;
+.social-links {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.social-links li {
+    margin: 0 10px;
+}
+
+.social-links a {
+    text-decoration: none;
+    color: #007bff;
     font-weight: bold;
-    color: #333;
-    margin-bottom: 10px;
-  }
+    transition: color 0.3s;
+}
+
+.social-links a:hover {
+    color: #0056b3;
+}
   
-  #contacto input,
-  #contacto textarea {
-    border: 2px solid #ccc;
-    border-radius: 5px;
-    padding: 10px;
-    font-size: 16px;
-    margin-bottom: 20px;
-    width: 100%;
-  }
-  
-  #contacto button[type="submit"] {
-    background-color: #6C63FF;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    padding: 10px 20px;
-    font-size: 16px;
-    cursor: pointer;
-    transition: all 0.3s ease;
-  }
-  
-  #contacto button[type="submit"]:hover {
-    background-color: #6C63FF;
-  }
-  
+
 
   /* Estilo para el footer */
 footer {
