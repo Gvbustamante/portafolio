@@ -27,7 +27,11 @@
 
 .social-links li {
     margin: 0 10px;
+    font-size: 1.5rem;
+    line-height: 1;
 }
+
+
 
 .social-links a {
     text-decoration: none;
