@@ -53,11 +53,11 @@
   }
   
   .redes-sociales li a:hover {
-    color: #b76e79;
+    color: #b76e79a3;
   }
 
   .curriculo-btn {
-    background-color: #b76e79;
+    background-color: #b76e79a3;
     color: #FFFFFF;
     border-radius: 50px;
     padding: 8px 15px;
