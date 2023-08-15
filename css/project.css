@@ -1,7 +1,7 @@
 /* Estilo para la sección de proyectos */
 #experiencia {
     background-color: #f8f8f8;
-    padding: 80px 0;
+    padding: 60px 0;
   }
   
   .experiencia-container {
@@ -14,14 +14,16 @@
   }
   
   .proyecto {
+    background-color: #fff;
+    border: 1px solid #e0e0e0;
+    border-radius: 5px;
+    margin: 10px;
+    padding: 20px;
+    text-align: center;
     width: 300px;
-    height: 400px;
-    margin-bottom: 40px;
-    margin: 20px;
-    border-radius: 10px;
-    overflow: hidden;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    transition: transform 0.2s ease-in-out;  }
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease-in-out;
+  }
   
   .proyecto:hover {
     transform: translateY(-5px);
@@ -29,101 +31,117 @@
   
   .proyecto img {
     width: 100%;
+    max-width: 200px;
     height: auto;
+    margin: 0 auto 15px;
+    display: block;
   }
   
   .proyecto h5 {
-    font-size: 20px;
-    margin: 20px;
+    font-size: 18px;
+    margin-bottom: 10px;
     color: #333;
     font-weight: bold;
   }
   
   .proyecto p {
-    font-size: 16px;
-    margin: 0 20px 20px;
-    color: #333;
+    font-size: 14px;
+    color: #888;
+    margin-bottom: 15px;
   }
   
-  button a{
-    text-decoration: none;
+  
+.btns {
+  display: flex;
+  justify-content: center;
+}
 
-  }
+.demo-btn,
+.repositorio-btn {
+  background-color: #f3f3f3;
+  border: none;
+  padding: 5px 15px;
+  margin: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.demo-btn a,
+.repositorio-btn a {
+  text-decoration: none;
+  color: #333;
+}
+
+.demo-btn:hover,
+.repositorio-btn:hover {
+  background-color: #b76e79a3;
+}
+
     
   /* Estilos adicionales para un estilo femenino */
   #experiencia h2 {
     color: #333;
     font-size: 40px;
     text-align: center;
-    margin-bottom: 50px;
+    margin-bottom: 20px;
     font-weight: bold;
   }
   
-
-
-    .demo-btn, .repositorio-btn {
-    background-color: #6C63FF;
-    color: #fff;
-  }
-  
-  .demo-btn:hover, .repositorio-btn:hover {
-    background-color: #918bff75;
-
-  }
   
 
+    .demo-btn a,
+    .repositorio-btn a {
+        text-decoration: none;
+        color: #333;
+    }
   .btns {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     margin-bottom: 20px;
   }
   
   .demo-btn, .repositorio-btn {
-    padding: 10px 20px;
+    background-color: #f3f3f3;
     border: none;
-    border-radius: 5px;
-    font-size: 16px;
-    font-weight: bold;
+    padding: 5px 15px;
+    margin: 5px;
     cursor: pointer;
-    transition: background-color 0.2s ease-in-out;
+    transition: background-color 0.3s;
+  }
+  .demo-btn:hover, .repositorio-btn:hover {
+      background-color: #b76e79a3;
+
   }
 
-@media (max-width: 680px) {
-  #experiencia {
-    padding: 60px 0;
-  }
-  
+/* Estilos para pantallas mayores a 768px */
+@media screen and (max-width: 768px) {
   .experiencia-container {
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
   }
-  
+
   .proyecto {
-    width: 100%;
-    max-width: 300px;
-    height: auto;
-    margin: 20px;
+    width: 80%;
+    margin: 10px 0;
   }
-  
-  .proyecto:hover {
-    transform: none;
+
+  .proyecto img {
+    max-width: 100%;
   }
-  
+}
+
+/* Estilos para pantallas mayores a 680px */
+@media screen and (max-width: 680px) {
+  .proyecto {
+    width: 80%;
+    margin: 10px 0;
+  }
+
   .proyecto h5 {
-    font-size: 18px;
-    margin: 15px 20px;
+    font-size: 16px;
   }
-  
+
   .proyecto p {
-    font-size: 14px;
-    margin: 0 20px 15px;
-  }
-  
-  .btns {
-    justify-content: center;
-  }
-  
-  .demo-btn, .repositorio-btn {
-    font-size: 14px;
-    padding: 8px 16px;
+    font-size: 12px;
   }
 }
