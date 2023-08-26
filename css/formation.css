@@ -1,122 +1,109 @@
+/* Estilos rediseñados con cajitas pequeñas utilizando Flexbox */
+
 .formaciones {
     background-color: #f7f7f7;
     padding: 80px 0;
-  }
-  
-  .formaciones h2 {
+}
+
+.formaciones h2 {
     text-align: center;
     margin-bottom: 50px;
     font-size: 36px;
     color: #333;
-  }
-  
-  .formaciones-container {
+}
+
+.formaciones-container {
     display: flex;
-    justify-content: space-around;
-    align-items: center;
+    justify-content: center;
     flex-wrap: wrap;
-  }
-  
-  .formacion {
-    width: 300px;
-    height: 390px;
+}
+
+.formacion {
+    width: 240px;
+    height: 300px;
     margin: 20px;
     background-color: white;
     border-radius: 10px;
     box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
     text-align: center;
     margin-bottom: 40px;
-  }
-  
-  .formacion img {
-    width: 150px;
-    height: 150px;
-    border-radius: 20%;
-    margin: 40px auto;
-    display: block;
-  }
-  
-  .formacion h4 {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.formacion img {
+    width: 100px;
+    height: 100px;
+    border-radius: 1%;
+    margin: 0 auto;
+}
+
+.formacion h4 {
     font-size: 1.3rem;
     margin-bottom: 10px;
     color: #333;
-    padding: 0 30px;
+}
 
-  }
-
-  .formacion p {
+.formacion p {
     font-size: 1rem;
     margin-bottom: 10px;
-    color: b6b6b6;
-    padding: 0 25px;
-
-  }
-
-
-@media (max-width: 768px) {
-  .formaciones {
-    padding: 60px 0; /* Ajuste del padding vertical */
-  }
-  
-  .formaciones h2 {
-    font-size: 28px; /* Reducción del tamaño de fuente */
-    margin-bottom: 40px; /* Ajuste del margen inferior */
-  }
-  
-  .formaciones-container {
-    justify-content: center; /* Centrar elementos horizontalmente */
-  }
-  
-  .formacion {
-    width: 100%; /* Ancho al 100% para ocupar todo el espacio disponible */
-    max-width: 300px; /* Reducción del ancho máximo */
-    margin: 15px; /* Ajuste del margen */
-    margin-bottom: 30px; /* Reducción del margen inferior */
-  }
-  
-  .formacion img {
-    width: 120px; /* Reducción del tamaño de la imagen */
-    height: 120px; /* Reducción del tamaño de la imagen */
-    margin: 30px auto; /* Ajuste del margen */
-  }
-  
-  .formacion h4 {
-    font-size: 20px; /* Reducción del tamaño de fuente */
-    margin-bottom: 9px; /* Ajuste del margen inferior */
-  }
+    color: #b6b6b6;
 }
 
-@media (max-width: 680px) {
-  .formaciones {
-    padding: 50px 0; /* Ajuste del padding vertical */
-  }
-  
-  .formaciones h2 {
-    font-size: 24px; /* Reducción del tamaño de fuente */
-    margin-bottom: 30px; /* Ajuste del margen inferior */
-  }
-  
-  .formaciones-container {
-    justify-content: center; /* Centrar elementos horizontalmente */
-  }
-  
-  .formacion {
-    width: 100%; /* Ancho al 100% para ocupar todo el espacio disponible */
-    max-width: 280px; /* Reducción del ancho máximo */
-    margin: 10px; /* Ajuste del margen */
-    margin-bottom: 20px; /* Reducción del margen inferior */
-  }
-  
-  .formacion img {
-    width: 100px; /* Reducción adicional del tamaño de la imagen */
-    height: 100px; /* Reducción adicional del tamaño de la imagen */
-    margin: 35px auto; /* Ajuste del margen */
-  }
-  
-  .formacion h4 {
-    font-size: 18px; /* Reducción del tamaño de fuente */
-    margin-bottom: 8.5px; /* Ajuste del margen inferior */
-  }
+
+
+/* Estilos para pantallas de 768px utilizando Media Queries */
+
+@media screen and (max-width: 768px) {
+    .formaciones-container {
+        justify-content: center;
+    }
+    
+    .formacion {
+        width: 45%;
+    }
+    
+    .formacion img {
+        width: 80px;
+        height: 80px;
+    }
+    
+    .formacion h4 {
+        font-size: 1.1rem;
+    }
+    
+    .formacion p {
+        font-size: 0.9rem;
+    }
 }
 
-  
+  /* Estilos para pantallas de 680px utilizando Media Queries */
+
+@media screen and (max-width: 680px) {
+    .formaciones-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .formacion {
+        width: 80%;
+        margin: 15px 0;
+    }
+    
+    .formacion img {
+        width: 60px;
+        height: 60px;
+        margin: 20px auto;
+    }
+    
+    .formacion h4 {
+        font-size: 1rem;
+    }
+    
+    .formacion p {
+        font-size: 0.8rem;
+    }
+}
+
