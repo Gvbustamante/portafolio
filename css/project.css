@@ -55,6 +55,7 @@
 .btns {
   display: flex;
   justify-content: center;
+
 }
 
 .demo-btn,
@@ -75,7 +76,7 @@
 
 .demo-btn:hover,
 .repositorio-btn:hover {
-  background-color: #b76e79a3;
+  background-color: #ffbce5a3;
 }
 
     
@@ -108,9 +109,10 @@
     margin: 5px;
     cursor: pointer;
     transition: background-color 0.3s;
+    border-radius: 9%;
   }
   .demo-btn:hover, .repositorio-btn:hover {
-      background-color: #b76e79a3;
+    background-color: #ffbce5a3;
 
   }
 .divider {

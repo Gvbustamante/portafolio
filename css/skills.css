@@ -55,7 +55,10 @@
     color: #333F;
 }
   
-
+.skill-icon:hover {
+  font-size: 2.5em;
+  color: rgb(255, 203, 233);
+}
   .skill p {
     margin-top: 10px;
     font-weight: 600;

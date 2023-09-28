@@ -35,13 +35,14 @@
 
 .social-links a {
     text-decoration: none;
-    color: #b76e79a3;
+    color: #b76e79;
     font-weight: bold;
     transition: color 0.3s;
 }
 
 .social-links a:hover {
-    color: #b76e79;
+    color: #eeb6d7;
+    
 }
   
 
