@@ -67,7 +67,7 @@
   
   @media screen and (max-width: 768px) {
     .skill {
-      width: 100%;
+      width: 80%;
     }
   }
 @media (max-width: 680px) {
@@ -94,7 +94,7 @@
   
   .skill:hover {
     transform: none;
-    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.15);
+    box-shadow: 0px 6px 12px rgba(255, 186, 186, 0.15);
   }
   
   .skill-icon {

@@ -4,7 +4,9 @@
     background-color: #f7f7f7;
     padding: 80px 0;
 }
-
+.formacion:hover{
+    box-shadow: 0px 8px 16px rgba(255, 192, 192, 0.2);
+    }
 .formaciones h2 {
     text-align: center;
     margin-bottom: 50px;
@@ -34,20 +36,20 @@
 }
 
 .formacion img {
-    width: 100px;
-    height: 100px;
+    width: 200px;
+    height: 170px;
     border-radius: 1%;
     margin: 0 auto;
 }
 
-.formacion h4 {
-    font-size: 1.3rem;
+.formacion h3 {
+    font-size: 18px;
     margin-bottom: 10px;
     color: #333;
 }
 
 .formacion p {
-    font-size: 1rem;
+    font-size: 14px;
     margin-bottom: 10px;
     color: #b6b6b6;
 }
@@ -66,16 +68,16 @@
     }
     
     .formacion img {
-        width: 80px;
-        height: 80px;
+        width: 200px;
+        height: 180px;
     }
     
-    .formacion h4 {
-        font-size: 1.1rem;
+    .formacion h3 {
+    font-size: 18px;
     }
     
     .formacion p {
-        font-size: 0.9rem;
+    font-size: 16px;
     }
 }
 
@@ -91,19 +93,19 @@
         width: 80%;
         margin: 15px 0;
     }
-    
+
+
     .formacion img {
-        width: 60px;
-        height: 60px;
+        width: 160px;
+        height: 140px;
         margin: 20px auto;
     }
     
-    .formacion h4 {
-        font-size: 1rem;
+    .formacion h3 {
+        font-size: 19px;
     }
     
     .formacion p {
-        font-size: 0.8rem;
+        font-size: 16px;
     }
 }
-
