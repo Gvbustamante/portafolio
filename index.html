@@ -3,78 +3,37 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="reset.css">
+    <meta name="viewport" width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.3.0/css/all.css">
-    <link rel="stylesheet" href="./css/header.css" />
-    <link rel="stylesheet" href="./css/aboutme.css">
-    <link rel="stylesheet" href="./css/aboutMe2.css">
-    <link rel="stylesheet" href="./css/skills.css">
-    <link rel="stylesheet" href="./css/hobbies.css">
-    <link rel="stylesheet" href="./css/formation.css">
-    <link rel="stylesheet" href="./css/cardformation.css">
-    <link rel="stylesheet" href="./css/project.css">
-    <link rel="stylesheet" href="./css/footer.css">
-
-
-
-    <link rel="stylesheet" type="text/css" href="./css/estilos.css">
+    <link rel="stylesheet" href="./css/general.css">
     <title>Gise.Developer</title>
 </head>
-
 <body>
-  <section class="header-container">
-    <header>
-      <h4><a href="#sobre-mi"></a>Gise.Developer</h4>
-      <button id="menu-button"><span><i class="fa-light fa-list-dropdown"></i></span></button>
-    </header>
-    <div class="menu-wrapper">
-      <nav>
-        <ul class="menu-list">
-          <li><a href="#sobre-mi2">About me</a></li>
-          <li><a href="#skills">Skills</a></li>
-          <li><a href="#hobbies">Hobbies</a></li>
-          <li><a href="#formacion">Education</a></li>
-          <li><a href="#experiencia">Projects</a></li>
-          <li><a href="https://gisedeveloper.framer.website/blog">Blog</a></li>
-          <li><a href="#contacto"><strong>gvbustamante02@gmail.com</strong></a></li>
-        </ul>
+    <div class="container">
+        <!-- Sidebar -->
+        <nav class="sidebar">
+          <button class="menu-toggle"><i class="fa-solid fa-bars"></i></button>
+          <ul class="menu-list">
+              <li><a href="#sobre-mi" class="menu-item"><i class="fa-solid fa-user"></i><span class="link-text"> About Me</span></a></li>
+              <li><a href="#skills" class="menu-item"><i class="fa-solid fa-star"></i><span class="link-text"> Skills</span></a></li>
+              <li><a href="#hobbies" class="menu-item"><i class="fa-solid fa-heart"></i><span class="link-text"> Hobbies</span></a></li>
+              <li><a href="#formacion" class="menu-item"><i class="fa-solid fa-graduation-cap"></i><span class="link-text"> Education</span></a></li>
+              <li><a href="#experiencia" class="menu-item"><i class="fa-solid fa-briefcase"></i><span class="link-text"> Projects</span></a></li>
+              <li><a href="#contacto" class="menu-item"><i class="fa-solid fa-envelope"></i><span class="link-text"> Contact</span></a></li>
+          </ul>
       </nav>
-    </div>
-  </section>
-  
-  
-    <main>
-      <section id="sobre-mi" class="sobre-mi-contenedor">
-        <img src="./img/foto perfil.png" alt="Foto de perfil" class="foto-perfil">
-        <div class="texto">
-            <h2>Hi, my name is Gisella <br> Bustamante, and I build websites</h2>
-            <p>Frontend developer by vocation. Passionate about the world of web design and development.</p>
-            <ul class="redes-sociales">
-                <li><a href="https://www.linkedin.com/in/gvbustamante/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a></li>
-                <li><a href="https://github.com/Gvbustamante/" target="_blank"><i class="fa-brands fa-github-alt"></i></a></li>
-                <li><a href="https://twitter.com/GisellaBM" target="_blank"><i class="fa-brands fa-twitter"></i></a></li>
-                <li><a class="curriculo-btn" href="./local/Currículum2024.pdf" target="_blank"><i class="fa-light fa-file-pdf" style="color: #ffffff;"></i></a></li>
-            </ul>
-        </div>
-    </section>
-    <section id="sobre-mi-2" class="sobre-mi-2">
-      <h2>About Me</h2>
-      <div class="sobre-mi-content">
-        <div class="sobre-mi-text">
-          <p>I am a passionate frontend developer dedicated to crafting exceptional user experiences. </p>
-          <p>My expertise encompasses HTML, CSS, and React, along with designing and developing interfaces in WordPress and Webflow, and the ability to integrate data into MySQL.</p>
-          <p> If you're seeking a passionate and skilled frontend professional, I'm here to collaborate on your next web project and create a truly extraordinary user experience.</p>
-          </div>
-        <div class="sobre-mi-image">
-          <img src="./img/Gisella B..png" alt="Firma-gise">
-        </div>
-      </div>
-    </section>
+      
+        <!-- Main Content -->
+        <main class="main-content">
+            <section id="sobre-mi" class="section">
+                <div class="section-content">
+                    <img src="./img/foto perfil.png" alt="Foto de perfil" class="foto-perfil">
+                    <h2>Hi, my name is Gisella Bustamante, and I build websites</h2> <p>Frontend developer by vocation. Passionate about the world of web design and development.</p> <ul class="redes-sociales"> <li><a href="https://www.linkedin.com/in/gvbustamante/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a></li> <li><a href="https://github.com/Gvbustamante/" target="_blank"><i class="fa-brands fa-github-alt"></i></a></li> <li><a href="https://twitter.com/GisellaBM" target="_blank"><i class="fa-brands fa-twitter"></i></a></li> <li><a href="./local/Currículum2024.pdf" target="_blank"><i class="fa-light fa-file-pdf"></i></a></li> </ul> </div> </section>
+                    
     
-      <section id="skills" class="skills">
-        <h2>My Skills</h2>
-        <div class="skills-container">
+    <section id="skills" class="section">
+      <h2>My Skills</h2>
+      <div class="skills-container">
 
           <div class="skill">
             <div class="skill-icon html"><i class="fa-brands fa-html5"></i></div>
@@ -111,7 +70,7 @@
           </div>
         </div>
       </section>
-      <section id="hobbies" class="hobbies">
+      <section id="hobbies" class="section">
         <h2>My Hobbies</h2>
         <div class="hobbies-container">
           <div class="hobby">
@@ -141,10 +100,10 @@
         </div>
       </section>
       
-          <section id="formacion" class="formaciones">
-        <h2 class="formaciones-title">Educations</h2>
-        <div class="formaciones-container">
-            <div class="formacion">
+      <section id="formacion" class="section">
+        <h2>Educations</h2>
+        <div class="education-container">
+          <div class="formacion">
                 <img class="formacion-img" src="./img/usanjose.png" alt="Fundación Universitaria San José">
                 <h3 class="formacion-title">Systems engineer</h3>
                 <p class="formacion-institucion">San José University Foundation | 2023</p>
@@ -170,81 +129,98 @@
         </div>
     </section>
 
-      <section id="experiencia"id="experiencia">
-        <h2>My Projects</h2>  
-          <div class="experiencia-container"> 
-
-            <div class="proyecto">
-              <img src="./img/enterprise web site.png" alt="Imagen Proyecto gym of home">
+    <section id="experiencia" class="section">
+      <h2>My Projects</h2>
+      <div class="projects-container">
+  
+          <div class="proyecto">
+              <img src="./img/enterprise web site.png" alt="Imagen Proyecto Gobe App Technology">
               <h3>Gobe App Technology</h3>
-              <p>Enterprise web site<br/>
-                Html | css | Javascript
-              </p>
-
+              <p>Enterprise web site<br/>Html | CSS | Javascript</p>
+  
               <div class="btns">
-                <button class="demo-btn"><a href="https://gobeapp.com/" target="_blank">Demo</a></button>
+                  <button class="demo-btn"><a href="https://gobeapp.com/" target="_blank">Demo</a></button>
               </div>
-              
-        </div>
-
-            <div class="proyecto">
-                  <img src="./img/pilotweb.png" alt="Imagen Proyecto we make pilot">
-                  <h3>We Make Pilot Home</h3>
-                  <p>HomePage of pilots<br/>
-                    Html | css | WebFlow
-                  </p>
-
-                  <div class="btns">
-                    <button class="demo-btn"><a href="https://carloss-top-notch-site-24f6c7.webflow.io/" target="_blank">Demo</a></button>
-                  </div>
-                  
-            </div>
-              
-            <div class="proyecto">
-                  <img src="./img/gymweb.png" alt="Imagen Proyecto gym of home">
-                  <h3>Gym of Home</h3>
-                  <p>HomePage of GYM<br/>
-                    Html | css | Wordpress
-                  </p>
-
-                  <div class="btns">
-                    <button class="demo-btn"><a href="https://projectone.gobeapp.com/" target="_blank">Demo</a></button>
-                  </div>
-                  
-            </div>
-
-            <div class="proyecto">
-              <img src="./img/127.0.0.1_5500_index.html (1).png" alt="Imagen alura">
-              <h3>Alura Encryptor</h3>
-              <p>Text Encryption and Decryption<br/>
-                Html | css | javaScript</p>
-
-              <div class="btns">
-                <button class="demo-btn"><a href="https://gvbustamante.github.io/Encriptador-alura/" target="_blank">Demo</a></button>
-                <hr class="divider">
-                <button class="repositorio-btn"><a href="https://github.com/Gvbustamante/Encriptador-alura" target="_blank">Repository</a></button>
-              </div>
-              
-        </div>
-
           </div>
-      </section>
+  
+          <div class="proyecto">
+              <img src="./img/pilotweb.png" alt="Imagen Proyecto We Make Pilot">
+              <h3>We Make Pilot Home</h3>
+              <p>Homepage of pilots<br/>Html | CSS | WebFlow</p>
+  
+              <div class="btns">
+                  <button class="demo-btn"><a href="https://pilotsflaviationcenter.webflow.io/" target="_blank">Demo</a></button>
+              </div>
+          </div>
+  
+          <div class="proyecto">
+              <img src="./img/gymweb.png" alt="Imagen Proyecto Gym of Home">
+              <h3>Gym of Home</h3>
+              <p>Homepage of GYM<br/>Html | CSS | Wordpress</p>
+  
+              <div class="btns">
+                  <button class="demo-btn"><a href="https://projectone.gobeapp.com/" target="_blank">Demo</a></button>
+              </div>
+          </div>
+  
+          <div class="proyecto">
+              <img src="./img/127.0.0.1_5500_index.html (1).png" alt="Imagen Proyecto Alura Encryptor">
+              <h3>Alura Encryptor</h3>
+              <p>Text Encryption and Decryption<br/>Html | CSS | Javascript</p>
+  
+              <div class="btns">
+                  <button class="demo-btn"><a href="https://gvbustamante.github.io/Encriptador-alura/" target="_blank">Demo</a></button>
+                  <hr class="divider">
+                  <button class="repositorio-btn"><a href="https://github.com/Gvbustamante/Encriptador-alura" target="_blank">Repository</a></button>
+              </div>
+          </div>
+  
+          <!-- Proyecto adicional 1
+          <div class="proyecto">
+              <img src="./img/ecommerce.png" alt="Imagen Proyecto E-commerce Site">
+              <h3>E-commerce Site</h3>
+              <p>Full-fledged e-commerce site<br/>Html | CSS | React</p>
+  
+              <div class="btns">
+                  <button class="demo-btn"><a href="https://ecommerce-demo.com/" target="_blank">Demo</a></button>
+                  <hr class="divider">
+                  <button class="repositorio-btn"><a href="https://github.com/Gvbustamante/ecommerce-demo" target="_blank">Repository</a></button>
+              </div>
+          </div>
+  
+          Proyecto adicional 2 
+          <div class="proyecto">
+              <img src="./img/portfolio.png" alt="Imagen Proyecto Personal Portfolio">
+              <h3>Personal Portfolio</h3>
+              <p>My personal portfolio<br/>Html | CSS | Javascript</p>
+  
+              <div class="btns">
+                  <button class="demo-btn"><a href="https://myportfolio.com/" target="_blank">Demo</a></button>
+              </div>
+          </div> -->
+  
+      </div>
+  </section>
+  
 
-      <section id="contacto">
+      <section id="contacto" class="section"> 
         <h2>Contact</h2>
+        <div class="contact-container">
             <p>I'm available on social media! Reach out to me through:            </p>
             <ul class="social-links">
                 <li><a href="https://www.instagram.com/gise.developer/" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
                 <li><a href="https://www.linkedin.com/in/gvbustamante/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a></li>
-                <li><a href="https://twitter.com/GisellaBM" target="_blank"><i class="fa-brands fa-square-x-twitter"></i></a></li>
+                <li><a href="https://twitter.com/GisellaBM" target="_blank"><i class="fa-brands fa-twitter"></i></a></li>
             </ul>
+            </div>
+            <p>&copy; 2022 Gise.Developer</p>
       </section>
-      
+     
     </main>
-    
-    <footer>
-        <p>&copy; 2022 Gise.Developer</p>
-    </footer>
+  
+  
+  
+    <script src="./js/script.js"></script>
 
 </body>
 </html>
