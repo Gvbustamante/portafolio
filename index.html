@@ -2,225 +2,202 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gise Sci-Fi Portfolio</title>
+    <link rel="stylesheet" href="./css/styles.css">
+    <script defer src="./js/script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/particles.js"></script>
     <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.3.0/css/all.css">
-    <link rel="stylesheet" href="./css/general.css">
-    <title>Gise.Developer</title>
 </head>
 <body>
-    <div class="container">
-        <!-- Sidebar -->
-        <nav class="sidebar">
-          <button class="menu-toggle"><i class="fa-solid fa-bars"></i></button>
-          <ul class="menu-list">
-              <li><a href="#sobre-mi" class="menu-item"><i class="fa-solid fa-user"></i><span class="link-text"> About Me</span></a></li>
-              <li><a href="#skills" class="menu-item"><i class="fa-solid fa-star"></i><span class="link-text"> Skills</span></a></li>
-              <li><a href="#hobbies" class="menu-item"><i class="fa-solid fa-heart"></i><span class="link-text"> Hobbies</span></a></li>
-              <li><a href="#formacion" class="menu-item"><i class="fa-solid fa-graduation-cap"></i><span class="link-text"> Education</span></a></li>
-              <li><a href="#experiencia" class="menu-item"><i class="fa-solid fa-briefcase"></i><span class="link-text"> Projects</span></a></li>
-              <li><a href="#contacto" class="menu-item"><i class="fa-solid fa-envelope"></i><span class="link-text"> Contact</span></a></li>
-          </ul>
-      </nav>
-      
-        <!-- Main Content -->
-        <main class="main-content">
-            <section id="sobre-mi" class="section">
-                <div class="section-content">
-                    <img src="./img/foto perfil.png" alt="Foto de perfil" class="foto-perfil">
-                    <h2>Hi, my name is Gisella Bustamante, and I build websites</h2> <p>Frontend developer by vocation. Passionate about the world of web design and development.</p> <ul class="redes-sociales"> <li><a href="https://www.linkedin.com/in/gvbustamante/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a></li> <li><a href="https://github.com/Gvbustamante/" target="_blank"><i class="fa-brands fa-github-alt"></i></a></li> <li><a href="https://twitter.com/GisellaBM" target="_blank"><i class="fa-brands fa-twitter"></i></a></li> <li><a href="./local/Currículum2024.pdf" target="_blank"><i class="fa-light fa-file-pdf"></i></a></li> </ul> </div> </section>
-                    
-    
-    <section id="skills" class="section">
-      <h2>My Skills</h2>
-      <div class="skills-container">
 
-          <div class="skill">
-            <div class="skill-icon html"><i class="fa-brands fa-html5"></i></div>
-            <p>HTML 5</p>
-          </div>
+    <!-- Fondo de partículas -->
+    <div id="particles-js"></div>
 
-          <div class="skill">
-            <div class="skill-icon css"><i class="fa-brands fa-css3-alt"></i></div>
-            <p>CSS 3</p>
-          </div>
-          <div class="skill">
-            <div class="skill-icon javascript"><i class="fa-brands fa-square-js"></i></div>
-            <p>JavaScript</p>
-          </div>
-            <div class="skill">
-            <div class="skill-icon react"><i class="fa-brands fa-react"></i></div>
-            <p>React</p>
-          </div>
-          <div class="skill">
-            <div class="skill-icon sql"><i class="fa-brands fa-bootstrap"></i></div>
-            <p>Bootstrap</p>
-          </div>
-            <div class="skill">
-            <div class="skill-icon sql"><i class="fa-solid fa-database"></i></div>
-            <p>MySQL</p>
-          </div>
-          <div class="skill">
-            <div class="skill-icon wordpress"><i class="fa-brands fa-wordpress"></i></div>
-            <p>Wordpress</p>
-          </div>
-          <div class="skill">
-            <div class="skill-icon shopify"><i class="fab fa-shopify"></i></div>
-            <p>Shopify</p>
-          </div>
-        </div>
-      </section>
-      <section id="hobbies" class="section">
-        <h2>My Hobbies</h2>
-        <div class="hobbies-container">
-          <div class="hobby">
-            <div class="hobby-icon tennis"><i class="fa-light fa-tennis-ball"></i></div>
-            <p>Tenis Ball</p>
-          </div>
-          <div class="hobby">
-            <div class="hobby-icon series"><i class="fa-light fa-tv"></i></div>
-            <p>Watching series</p>
-          </div>
-          <div class="hobby">
-            <div class="hobby-icon music"><i class="fa-light fa-headphones-simple"></i></div>
-            <p>Listening to music</p>
-          </div>
-          <div class="hobby">
-            <div class="hobby-icon read"><i class="fa-light fa-book-heart"></i></div>
-            <p>Reading</p>
-          </div>
-          <div class="hobby">
-            <div class="hobby-icon photography"><i class="fa-light fa-ticket-airline"></i></i></div>
-            <p>Traveling</p>
-          </div>
-          <div class="hobby">
-            <div class="hobby-icon guitar"><i class="fa-light fa-guitar"></i></div>
-            <p>Playing the guitar</p>
-          </div>
-        </div>
-      </section>
-      
-      <section id="formacion" class="section">
-        <h2>Educations</h2>
-        <div class="education-container">
-          <div class="formacion">
-                <img class="formacion-img" src="./img/usanjose.png" alt="Fundación Universitaria San José">
-                <h3 class="formacion-title">Systems engineer</h3>
-                <p class="formacion-institucion">San José University Foundation | 2023</p>
-            </div>
-            
-            <div class="formacion">
-                <img class="formacion-img" src="./img/oneOracle-logo.png" alt="Programa Oracle Education">
-                <h3 class="formacion-title">Front-end Developer</h3>
-                <p class="formacion-institucion">Oracle Next Education | 2023</p>
-            </div>
+    <!-- Contenedor principal -->
+    <main class="main-content">
+      <section id="about" class="section active">
+        <div class="about-container">
+            <!-- 📸 Imagen de Perfil -->
+            <img src="img/foto perfil.png" alt="Gisella Bustamante" class="profile-photo">
     
-            <div class="formacion">
-                <img class="formacion-img" src="./img/fec-logo.png" alt="Fundación Técnica">
-                <h3 class="formacion-title">Technical Certificate in Software Systems</h3>
-                <p class="formacion-institucion">Caribbean Business Foundation | 2022</p>
-            </div>
-            
-            <div class="formacion">
-                <img class="formacion-img" src="./img/politecnico-logo.png" alt="Politécnico Educación Superior">
-                <h3 class="formacion-title">Java Programming Diploma</h3>
-                <p class="formacion-institucion">Colombian Polytechnic | 2022</p>
+            <!-- 📜 Texto de Presentación -->
+            <div class="about-text">
+                <h1>Hi, I'm Gisella Bustamante</h1>
+                <p>I build modern and professional websites that bring ideas to life.</p>
+    
+                <!-- 🔗 Redes Sociales -->
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/gvbustamante/" target="_blank" class="social-link">
+                        <i class="fa-brands fa-linkedin"></i>
+                    </a>
+                    <a href="https://github.com/Gvbustamante/" target="_blank" class="social-link">
+                        <i class="fa-brands fa-github"></i>
+                    </a>
+                    <a href="https://www.instagram.com/gise.developer/" target="_blank" class="social-link">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                </div>
             </div>
         </div>
     </section>
+    
+    
+    
 
-    <section id="experiencia" class="section">
-      <h2>My Projects</h2>
-      <div class="projects-container">
-  
-          <div class="proyecto">
-              <img src="./img/enterprise web site.png" alt="Imagen Proyecto Gobe App Technology">
-              <h3>Gobe App Technology</h3>
-              <p>Enterprise web site<br/>Html | CSS | Javascript</p>
-  
-              <div class="btns">
-                  <button class="demo-btn"><a href="https://gobeapp.com/" target="_blank">Demo</a></button>
-              </div>
+    <section id="skills" class="section">
+      <h2>Skills</h2>
+      <div class="skills-grid">
+          <div class="skill-card" data-skill="html">
+              <i class="fa-brands fa-html5 skill-icon"></i>
+              <span>HTML</span>
           </div>
-  
-          <div class="proyecto">
-              <img src="./img/pilotweb.png" alt="Imagen Proyecto We Make Pilot">
-              <h3>We Make Pilot Home</h3>
-              <p>Homepage of pilots<br/>Html | CSS | WebFlow</p>
-  
-              <div class="btns">
-                  <button class="demo-btn"><a href="https://pilotsflaviationcenter.webflow.io/" target="_blank">Demo</a></button>
-              </div>
+          <div class="skill-card" data-skill="css">
+              <i class="fa-brands fa-css3-alt skill-icon"></i>
+              <span>CSS</span>
           </div>
-  
-          <div class="proyecto">
-              <img src="./img/gymweb.png" alt="Imagen Proyecto Gym of Home">
-              <h3>Gym of Home</h3>
-              <p>Homepage of GYM<br/>Html | CSS | Wordpress</p>
-  
-              <div class="btns">
-                  <button class="demo-btn"><a href="https://projectone.gobeapp.com/" target="_blank">Demo</a></button>
-              </div>
+          <div class="skill-card" data-skill="javascript">
+              <i class="fa-brands fa-square-js skill-icon"></i>
+              <span>JavaScript</span>
           </div>
-  
-          <div class="proyecto">
-              <img src="./img/127.0.0.1_5500_index.html (1).png" alt="Imagen Proyecto Alura Encryptor">
-              <h3>Alura Encryptor</h3>
-              <p>Text Encryption and Decryption<br/>Html | CSS | Javascript</p>
-  
-              <div class="btns">
-                  <button class="demo-btn"><a href="https://gvbustamante.github.io/Encriptador-alura/" target="_blank">Demo</a></button>
-                  <hr class="divider">
-                  <button class="repositorio-btn"><a href="https://github.com/Gvbustamante/Encriptador-alura" target="_blank">Repository</a></button>
-              </div>
+          <div class="skill-card" data-skill="react">
+              <i class="fa-brands fa-react skill-icon"></i>
+              <span>React</span>
           </div>
-  
-          <!-- Proyecto adicional 1
-          <div class="proyecto">
-              <img src="./img/ecommerce.png" alt="Imagen Proyecto E-commerce Site">
-              <h3>E-commerce Site</h3>
-              <p>Full-fledged e-commerce site<br/>Html | CSS | React</p>
-  
-              <div class="btns">
-                  <button class="demo-btn"><a href="https://ecommerce-demo.com/" target="_blank">Demo</a></button>
-                  <hr class="divider">
-                  <button class="repositorio-btn"><a href="https://github.com/Gvbustamante/ecommerce-demo" target="_blank">Repository</a></button>
-              </div>
+          <div class="skill-card" data-skill="nodejs">
+              <i class="fa-brands fa-node skill-icon"></i>
+              <span>Node.js</span>
           </div>
+          <div class="skill-card" data-skill="mysql">
+              <i class="fa-solid fa-database skill-icon"></i>
+              <span>MySQL</span>
+          </div>
+      </div>
   
-          Proyecto adicional 2 
-          <div class="proyecto">
-              <img src="./img/portfolio.png" alt="Imagen Proyecto Personal Portfolio">
-              <h3>Personal Portfolio</h3>
-              <p>My personal portfolio<br/>Html | CSS | Javascript</p>
-  
-              <div class="btns">
-                  <button class="demo-btn"><a href="https://myportfolio.com/" target="_blank">Demo</a></button>
-              </div>
-          </div> -->
-  
+      <!-- Contenedor donde se mostrará el mensaje dinámico -->
+      <div class="skill-message" id="skill-message">
+          <p>Tap a skill to see a fun example!</p>
       </div>
   </section>
   
+  
 
-      <section id="contacto" class="section"> 
-        <h2>Contact</h2>
-        <div class="contact-container">
-            <p>I'm available on social media! Reach out to me through:            </p>
-            <ul class="social-links">
-                <li><a href="https://www.instagram.com/gise.developer/" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
-                <li><a href="https://www.linkedin.com/in/gvbustamante/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a></li>
-                <li><a href="https://twitter.com/GisellaBM" target="_blank"><i class="fa-brands fa-twitter"></i></a></li>
-            </ul>
-            </div>
-            <p>&copy; 2022 Gise.Developer</p>
-      </section>
-     
+  <section id="projects" class="section">
+    <h2>Projects</h2>
+    <div class="project-list">
+
+        <!-- Proyecto 1: Gobe App Technology -->
+        <div class="project-card">
+            <img src="img/gobeapp.png" alt="Gobe App Technology" class="project-image">
+            <h3>Gobe App Technology</h3>
+            <p>Enterprise web site</p>
+            <a href="https://gobeapp.com/" target="_blank" class="project-button">View Demo</a>
+        </div>
+
+        <!-- Proyecto 2: Alura Encryptor -->
+        <div class="project-card">
+            <img src="img/alura.png" alt="Alura Encryptor" class="project-image">
+            <h3>Alura Encryptor</h3>
+            <p>Text encryption tool</p>
+            <a href="https://gvbustamante.github.io/Encriptador-alura/" target="_blank" class="project-button">View Demo</a>
+        </div>
+
+        <!-- Proyecto 3: We Make Pilots -->
+        <div class="project-card">
+            <img src="img/websitepilot.png" alt="We Make Pilots" class="project-image">
+            <h3>We Make Pilots</h3>
+            <p>Website for an aviation academy</p>
+            <a href="https://pilotsflaviationcenter.webflow.io/" target="_blank" class="project-button">View Demo</a>
+        </div>
+
+        <!-- Proyecto 4: Jardín Pequeños Tesoros -->
+        <div class="project-card">
+            <img src="img/pequenos.png" alt="Jardín Pequeños Tesoros" class="project-image">
+            <h3>Jardín Pequeños Tesoros</h3>
+            <p>Preschool website</p>
+            <a href="https://jardinpequenostesoros.com/" target="_blank" class="project-button">View Demo</a>
+        </div>
+
+        <!-- Proyecto 5: Social Media Management -->
+        <div class="project-card">
+            <img src="img/socialmedia.png" alt="Social Media Management" class="project-image">
+            <h3>Social Media Management</h3>
+            <p>Instagram brand growth & marketing</p>
+            <a href="#" class="project-button disabled">No Link Available</a>
+        </div>
+
+        <!-- Proyecto 6: Invitations & Games -->
+        <div class="project-card">
+            <img src="img/invitacion.png" alt="Invitations & Games" class="project-image">
+            <h3>Interactive Invitations & Games</h3>
+            <p>Invitations with Scratch & Google Sites</p>
+            <a href="https://sites.google.com/view/notinewsanti/noti-new-santi" target="_blank" class="project-button disabled">View Demo</a>
+        </div>
+
+    </div>
+</section>
+
+
+        
+<section id="education" class="section">
+  <h2>Education</h2>
+  <div class="education-grid">
+      <div class="education-card">
+          <img src="img/usanjose.png" alt="San José University Foundation">
+          <h3>San José University Foundation</h3>
+          <p>Systems Engineer | 2023</p>
+      </div>
+      <div class="education-card">
+          <img src="img/oneOracle-logo.png" alt="Oracle Next Education">
+          <h3>Oracle Next Education</h3>
+          <p>Front-End Developer | 2023</p>
+      </div>
+      <div class="education-card">
+          <img src="img/fec-logo.png" alt="Caribbean Business Foundation">
+          <h3>Caribbean Business Foundation</h3>
+          <p>Technical Certificate in Software Systems | 2022</p>
+      </div>
+      <div class="education-card">
+          <img src="img/politecnico-logo.png" alt="Colombian Polytechnic">
+          <h3>Colombian Polytechnic</h3>
+          <p>Java Programming Diploma | 2022</p>
+      </div>
+  </div>
+</section>
+
+
+
+
+<section id="contact" class="section">
+  <h2>Contact Me</h2>
+  <div class="contact-container">
+      <p>Fill out the form and I'll get back to you soon!</p>
+
+      <form id="contact-form">
+          <input type="text" name="entry.1228903921" placeholder="Your Name" required>
+          <input type="email" name="entry.1869697311" placeholder="Your Email" required>
+          <textarea name="entry.156780028" placeholder="Your Message" required></textarea>
+          <button type="submit">Send Message</button>
+      </form>
+
+      <!-- Mensaje de confirmación -->
+      <p id="form-response" class="hidden">✅ Your message has been sent successfully!</p>
+  </div>
+</section>
+
+
+
     </main>
-  
-  
-  
-    <script src="./js/script.js"></script>
+
+    <!-- Menú inferior -->
+    <nav class="bottom-nav">
+        <a href="#about" class="nav-item active"><i class="fa-solid fa-user"></i></a>
+        <a href="#skills" class="nav-item"><i class="fa-solid fa-star"></i></a>
+        <a href="#projects" class="nav-item"><i class="fa-solid fa-briefcase"></i></a>
+        <a href="#education" class="nav-item"><i class="fa-solid fa-graduation-cap"></i></a>
+        <a href="#contact" class="nav-item"><i class="fa-solid fa-envelope"></i></a>
+    </nav>
 
 </body>
 </html>

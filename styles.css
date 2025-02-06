@@ -1,0 +1,446 @@
+/* 🎨 Nueva paleta de colores */
+:root {
+    --bg-color: #f9f9f9; /* gris blanco */
+    --text-color: #333333; /* Gris oscuro */
+    --primary-color: #2C3E50; /* Azul oscuro profesional */
+    --accent-color: #a7fffc; /* Verde suave */
+    --card-bg: rgba(255, 255, 255, 0.9); /* Fondo blanco translúcido */
+}
+
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+
+/* 🎨 Fondo Principal */
+body {
+    background: var(--bg-color);
+    color: var(--text-color);
+}
+
+/* 🎨 Menú Inferior Flotante */
+.bottom-nav {
+    position: fixed;
+    bottom: 20px; /* Elevado para dar efecto flotante */
+    left: 50%;
+    transform: translateX(-50%);
+    width: 90%;
+    max-width: 400px; /* Ancho limitado para centrarlo */
+    background: rgba(0, 0, 0, 0.8); /* Fondo semi-transparente */
+    backdrop-filter: blur(10px); /* Efecto de vidrio */
+    display: flex;
+    justify-content: space-around;
+    padding: 12px 0;
+    border-radius: 15px; /* Bordes redondeados */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3); /* Sombra flotante */
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+/* 🎭 Efecto Flotante al Pasar el Mouse */
+.bottom-nav:hover {
+    transform: translateX(-50%) translateY(-5px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.4);
+}
+
+/* 🎯 Íconos del Menú */
+.nav-item {
+    color: white;
+    font-size: 24px;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out, transform 0.2s ease-in-out;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    border-radius: 50%;
+}
+
+/* 🔵 Efecto al Pasar el Mouse y Elemento Activo */
+.nav-item:hover,
+.nav-item.active {
+    color: var(--accent-color);
+    transform: scale(1.1);
+}
+
+/* 📱 Ajustes para Móviles */
+@media (max-width: 600px) {
+    .bottom-nav {
+        width: 95%;
+        bottom: 15px;
+        padding: 10px 0;
+    }
+    .nav-item {
+        font-size: 22px;
+    }
+}
+
+
+/* 🎨 Contenido */
+.main-content {
+    padding: 80px 20px;
+    text-align: center;
+}
+
+/* 🎨 Secciones */
+.section {
+    background: var(--card-bg);
+    border-radius: 10px;
+    padding: 40px;
+    margin-bottom: 30px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    display: none;
+}
+
+.section.active {
+    display: block;
+}
+
+/* 🎨 Títulos */
+h1, h2 {
+    color: var(--primary-color);
+}
+/* 🎭 Contenedor Principal */
+.about-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+/* 📸 Foto de Perfil */
+.profile-photo {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+/* 🌟 Efecto al pasar el mouse en la foto */
+.profile-photo:hover {
+    transform: scale(1.05);
+}
+
+/* 📜 Texto de Presentación */
+.about-text h1 {
+    font-size: 1.8rem;
+    color: var(--primary-color);
+    font-weight: bold;
+}
+
+.about-text p {
+    font-size: 1rem;
+    color: var(--text-color);
+    opacity: 0.9;
+    margin-bottom: 15px;
+}
+
+/* 🔗 Redes Sociales */
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 10px;
+}
+
+/* 🎯 Iconos de Redes */
+.social-link {
+    font-size: 1.8rem;
+    color: var(--primary-color);
+    transition: color 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+/* 🎨 Hover en Iconos */
+.social-link:hover {
+    color: var(--accent-color);
+    transform: scale(1.2);
+}
+
+
+/* 🟡 Sección de Skills */
+.skills-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+/* 🎨 Tarjeta de cada Skill */
+.skill-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 120px;
+    height: 120px;
+    background: rgba(255, 255, 255, 0.8); /* Fondo suave */
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08); /* Sombras difusas */
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+/* 🎭 Efecto Flotante */
+.skill-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.12);
+}
+
+/* 🎨 Iconos de Skills */
+.skill-icon {
+    font-size: 2.5rem;
+    color: var(--primary-color);
+    margin-bottom: 10px;
+    transition: color 0.3s ease;
+}
+
+/* 🟡 Cambia el color del icono al pasar el mouse */
+.skill-card:hover .skill-icon {
+    color: var(--accent-color);
+}
+
+/* 📝 Nombre de la Skill */
+.skill-card span {
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--text-color);
+}
+
+/* 🎭 Contenedor del Mensaje */
+.skill-message {
+    margin-top: 20px;
+    padding: 15px;
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--primary-color);
+    background: rgba(255, 255, 255, 0.85);
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+    max-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    opacity: 0;
+    transform: translateY(10px);
+    transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+/* 📜 Hace visible el mensaje cuando se activa */
+.skill-message.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+/* 🎨 Sección Projects */
+.project-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+/* 🎭 Tarjeta de Proyecto con efecto flotante */
+.project-card {
+    background: rgba(255, 255, 255, 0.85); /* Fondo translúcido */
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    text-align: center;
+    width: 300px;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+/* 🎭 Efecto de elevación */
+.project-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+}
+
+/* 🖼️ Imagen del Proyecto */
+.project-image {
+    width: 100%;
+    height: auto;
+    border-radius: 12px; /* Bordes redondeados */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08); /* Efecto flotante */
+    margin-bottom: 10px;
+}
+
+/* 📝 Títulos y Texto */
+.project-card h3 {
+    font-size: 1.2rem;
+    color: var(--primary-color);
+    margin-bottom: 5px;
+}
+
+.project-card p {
+    font-size: 1rem;
+    color: var(--text-color);
+    opacity: 0.8;
+    margin-bottom: 10px;
+}
+
+/* 🔘 Botón View Demo */
+.project-button {
+    display: inline-block;
+    padding: 10px 15px;
+    background: var(--primary-color);
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: 500;
+    transition: background 0.3s ease-in-out, transform 0.2s ease-in-out;
+}
+
+/* 🟡 Hover en el botón */
+.project-button:hover {
+    background: var(--accent-color);
+    transform: scale(1.05);
+}
+
+
+/* 🎓 Contenedor de Education */
+.education-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); /* Tarjetas más pequeñas */
+    gap: 20px;
+    justify-content: center;
+    text-align: center;
+    margin-top: 30px;
+    padding: 20px;
+}
+
+/* 🟡 Tarjetas Flotantes más pequeñas y elegantes */
+.education-card {
+    background: rgba(255, 255, 255, 0.2); /* Fondo más sutil */
+    padding: 18px;
+    border-radius: 12px;
+    backdrop-filter: blur(8px); /* Efecto de vidrio suave */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Sombra más natural */
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 260px; /* Tamaño reducido */
+    margin: auto;
+}
+
+/* 🎭 Efecto Flotante SOLO en Hover */
+.education-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 15px rgba(167, 255, 252, 0.6); /* Efecto neón solo en hover */
+}
+
+/* 🎓 Logos de las Instituciones */
+.education-card img {
+    width: 70px; /* Tamaño más pequeño */
+    height: auto;
+    margin-bottom: 10px;
+    filter: drop-shadow(2px 3px 5px rgba(0, 0, 0, 0.1)); /* Sombra más sutil */
+}
+
+/* 📜 Texto con Mejor Espaciado */
+.education-card h3 {
+    font-size: 1rem;
+    color: var(--primary-color);
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+.education-card p {
+    font-size: 0.85rem;
+    color: var(--text-color);
+    opacity: 0.9;
+    font-weight: 500;
+}
+
+
+/* ✨ Animación de entrada */
+.contact-container {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 0.8s ease-out forwards;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* 📩 Formulario */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    max-width: 400px;
+    margin: auto;
+}
+
+/* ✨ Efecto flotante en los campos de entrada */
+form input,
+form textarea {
+    width: 100%;
+    padding: 12px;
+    border-radius: 8px;
+    border: none;
+    background: rgba(240, 240, 240, 0.9);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    font-size: 1rem;
+    color: var(--text-color);
+    transition: box-shadow 0.3s ease-in-out, transform 0.2s ease-in-out;
+}
+
+/* 📩 Efecto al enfocar los inputs */
+form input:focus,
+form textarea:focus {
+    outline: none;
+    box-shadow: 0 0 15px rgba(0, 200, 255, 0.5);
+    transform: scale(1.02);
+}
+
+/* 📩 Botón de Envío */
+form button {
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    background: var(--primary-color);
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out, transform 0.2s ease-in-out;
+}
+
+/* 📩 Efecto hover del botón */
+form button:hover {
+    background: var(--accent-color);
+    transform: scale(1.05);
+}
+
+/* ✅ Mensaje de confirmación */
+#form-response {
+    margin-top: 15px;
+    font-size: 1rem;
+    font-weight: bold;
+    color: rgb(14, 243, 216);
+    transition: opacity 0.3s ease-in-out;
+}
+
+.hidden {
+    opacity: 0;
+    visibility: hidden;
+}
