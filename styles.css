@@ -164,6 +164,42 @@ h1, h2 {
     transform: scale(1.2);
 }
 
+.cv-button {
+    display: inline-block;
+    padding: 10px 15px;
+    background: var(--primary-color);
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: background 0.3s ease-in-out, transform 0.2s ease-in-out;
+}
+
+.cv-button:hover {
+    background: var(--accent-color);
+    transform: scale(1.05);
+}
+
+.about-skills {
+    margin-top: 15px;
+    font-size: 1rem;
+    color: var(--text-color);
+    opacity: 0.9;
+}
+
+.about-quote {
+    margin-top: 20px;
+    font-style: italic;
+    font-size: 1rem;
+    color: var(--primary-color);
+    text-align: center;
+    padding: 10px;
+    border-left: 4px solid var(--primary-color);
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 5px;
+}
+
 
 /* 🟡 Sección de Skills */
 .skills-grid {
@@ -213,99 +249,216 @@ h1, h2 {
     font-weight: 500;
     color: var(--text-color);
 }
-
-/* 🎭 Contenedor del Mensaje */
-.skill-message {
-    margin-top: 20px;
-    padding: 15px;
-    text-align: center;
+/* 🎭 Estilo del Tooltip */
+.tooltip-message {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 15px 25px;
+    border-radius: 10px;
     font-size: 1rem;
-    font-weight: 500;
-    color: var(--primary-color);
-    background: rgba(255, 255, 255, 0.85);
-    border-radius: 12px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
-    max-width: 400px;
-    margin-left: auto;
-    margin-right: auto;
-    opacity: 0;
-    transform: translateY(10px);
-    transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
-}
-
-/* 📜 Hace visible el mensaje cuando se activa */
-.skill-message.show {
-    opacity: 1;
-    transform: translateY(0);
-}
-
-
-/* 🎨 Sección Projects */
-.project-list {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
-    margin-top: 20px;
-}
-
-/* 🎭 Tarjeta de Proyecto con efecto flotante */
-.project-card {
-    background: rgba(255, 255, 255, 0.85); /* Fondo translúcido */
-    padding: 20px;
-    border-radius: 15px;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    font-weight: bold;
     text-align: center;
-    width: 300px;
-    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+    z-index: 1000;
 }
 
-/* 🎭 Efecto de elevación */
-.project-card:hover {
-    transform: translateY(-8px);
-    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+/* 🎯 Mostrar Tooltip */
+.tooltip-message.show {
+    opacity: 1;
+    visibility: visible;
+    transform: translate(-50%, -50%) scale(1.1);
+}
+
+/* ⏳ Ocultar Tooltip */
+.tooltip-message.hide {
+    opacity: 0;
+    visibility: hidden;
+    transform: translate(-50%, -50%) scale(0.9);
+}
+
+
+
+
+/* 🎭 Contenedor del Slide */
+.slide-container {
+    position: relative;
+    width: 100%;
+    max-width: 600px; /* 🔹 Aumenta el ancho para mejor presentación */
+    margin: 40px auto; /* 🔹 Espacio entre secciones */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* 🔄 Track de Slides */
+.slide-track {
+    display: flex;
+    width: 100%;
+    position: relative;
+    gap: 30px; /* 🔹 Espacio entre slides */
+}
+
+/* 🎯 Slide Individual */
+.project-slide {
+    display: none; /* Oculta los demás slides */
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+    width: 100%;
+    max-width: 600px; /* 🔹 Ajusta el tamaño del slide */
+    padding: 25px;
+    background: rgba(255, 255, 255, 0.2); /* 🔹 Fondo más translúcido */
+    border-radius: 15px;
+    backdrop-filter: blur(8px); /* 🔹 Efecto de vidrio */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* 🔹 Sombra elegante */
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    margin: 10px 0; /* 🔹 Espacio vertical entre slides */
+}
+
+/* 🌟 Efecto Flotante */
+.project-slide:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* 📌 Muestra solo el slide activo */
+.project-slide.active {
+    display: flex;
 }
 
 /* 🖼️ Imagen del Proyecto */
 .project-image {
     width: 100%;
     height: auto;
-    border-radius: 12px; /* Bordes redondeados */
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08); /* Efecto flotante */
-    margin-bottom: 10px;
+    border-radius: 12px;
+    margin-bottom: 20px;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
 }
 
-/* 📝 Títulos y Texto */
-.project-card h3 {
-    font-size: 1.2rem;
+/* 📜 Texto alineado a la izquierda */
+.project-info {
+    text-align: left;
+}
+
+.project-info h3 {
+    font-size: 1.4rem;
+    font-weight: 600;
     color: var(--primary-color);
-    margin-bottom: 5px;
+    margin-bottom: 8px;
+    
 }
 
-.project-card p {
+.project-info p {
     font-size: 1rem;
     color: var(--text-color);
-    opacity: 0.8;
-    margin-bottom: 10px;
+    opacity: 0.85;
+    margin-bottom: 12px;
+    line-height: 1.5;
 }
 
-/* 🔘 Botón View Demo */
+/* 🔘 Botón del Proyecto */
 .project-button {
     display: inline-block;
-    padding: 10px 15px;
+    padding: 10px 14px;
     background: var(--primary-color);
     color: white;
     text-decoration: none;
-    border-radius: 8px;
-    font-weight: 500;
+    border-radius: 10px;
+    font-size: 0.95rem;
+    font-weight: bold;
     transition: background 0.3s ease-in-out, transform 0.2s ease-in-out;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
 }
 
-/* 🟡 Hover en el botón */
+/* 🌟 Efecto Hover */
 .project-button:hover {
     background: var(--accent-color);
     transform: scale(1.05);
 }
+
+/* ⬅️➡️ Botones de Navegación */
+.prev-button,
+.next-button {
+    background: rgba(0, 0, 0, 0.6);
+    color: white;
+    border: none;
+    padding: 14px;
+    cursor: pointer;
+    font-size: 1.5rem;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    border-radius: 50%;
+    transition: background 0.3s ease-in-out, transform 0.2s ease-in-out;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 45px;
+    height: 45px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* 🌟 Efecto Hover en Botones */
+.prev-button:hover,
+.next-button:hover {
+    background: rgba(255, 255, 255, 0.3);
+    transform: translateY(-50%) scale(1.1);
+    color: var(--primary-color);
+}
+
+/* 🏗️ Posicionamiento */
+.prev-button {
+    left: -50px;
+}
+
+.next-button {
+    right: -50px;
+}
+
+/* 📱 Ajustes para Móviles */
+@media (max-width: 600px) {
+    .slide-container {
+        max-width: 100%;
+    }
+    
+    .prev-button,
+    .next-button {
+        width: 40px;
+        height: 40px;
+        font-size: 1.3rem;
+        left: -35px;
+        right: -35px;
+    }
+
+    .project-slide {
+        padding: 20px;
+        border-radius: 10px;
+    }
+
+    .project-info h3 {
+        font-size: 1.2rem;
+    }
+
+    .project-info p {
+        font-size: 0.9rem;
+    }
+
+    .project-button {
+        font-size: 0.9rem;
+        padding: 8px 12px;
+    }
+}
+
+
+
+
 
 
 /* 🎓 Contenedor de Education */

@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gise Sci-Fi Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Gise Web Developer | Portfolio</title>
+    <link rel="stylesheet" href="./css/styles.css">
     <script defer src="./js/script.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/particles.js"></script>
@@ -17,126 +17,370 @@
 
     <!-- Contenedor principal -->
     <main class="main-content">
-      <section id="about" class="section active">
-        <div class="about-container">
-            <!-- 📸 Imagen de Perfil -->
-            <img src="img/foto perfil.png" alt="Gisella Bustamante" class="profile-photo">
-    
-            <!-- 📜 Texto de Presentación -->
-            <div class="about-text">
-                <h1>Hi, I'm Gisella Bustamante</h1>
-                <p>I build modern and professional websites that bring ideas to life.</p>
-    
-                <!-- 🔗 Redes Sociales -->
-                <div class="social-icons">
-                    <a href="https://www.linkedin.com/in/gvbustamante/" target="_blank" class="social-link">
-                        <i class="fa-brands fa-linkedin"></i>
-                    </a>
-                    <a href="https://github.com/Gvbustamante/" target="_blank" class="social-link">
-                        <i class="fa-brands fa-github"></i>
-                    </a>
-                    <a href="https://www.instagram.com/gise.developer/" target="_blank" class="social-link">
-                        <i class="fa-brands fa-instagram"></i>
-                    </a>
+        <section id="about" class="section active">
+            <div class="about-container">
+                <!-- 📸 Imagen de Perfil -->
+                <img src="img/foto perfil.png" alt="Gisella Bustamante" class="profile-photo">
+        
+                <!-- 📜 Texto de Presentación -->
+                <div class="about-text">
+                    <h1>Hi, I'm Gisella Bustamante</h1>
+                    <p>I build modern and professional websites that bring ideas to life.</p>
+        
+                    <!-- 🛠️ Habilidades -->
+                    <div class="about-skills">
+                        <p><strong>Especialidades:</strong> Desarrollo Frontend, UI/UX, Diseño Web</p>
+                        <p><strong>Stack Principal:</strong> HTML, CSS, JavaScript, React.js, WordPress</p>
+                    </div>
+        
+                    <!-- 📖 Frase Motivadora -->
+                    <div class="about-quote">
+                        <p>“El diseño no es solo lo que se ve y se siente. El diseño es cómo funciona.” – Steve Jobs</p>
+                    </div>
+        
+                    <!-- 🔗 Redes Sociales -->
+                    <div class="social-icons">
+                        <a href="https://www.linkedin.com/in/gvbustamante/" target="_blank" class="social-link">
+                            <i class="fa-brands fa-linkedin"></i>
+                        </a>
+                        <a href="https://github.com/Gvbustamante/" target="_blank" class="social-link">
+                            <i class="fa-brands fa-github"></i>
+                        </a>
+                        <a href="https://www.instagram.com/gise.developer/" target="_blank" class="social-link">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                        <a href="https://www.behance.net/gvbustamante" target="_blank" class="social-link">
+                            <i class="fa-brands fa-behance"></i>
+                        </a>
+                        <a href="https://x.com/GisellaBM" target="_blank" class="social-link">
+                            <i class="fa-brands fa-twitter"></i>
+                        </a>
+                    </div>
+        
+                    <!-- 📂 Botón de Descarga de CV 
+                    <a href="local/local/Currículum2024.pdf" download class="cv-button">Descargar CV</a>-->
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
+        
+        
+        
     
     
-    
-
-    <section id="skills" class="section">
-      <h2>Skills</h2>
-      <div class="skills-grid">
-          <div class="skill-card" data-skill="html">
-              <i class="fa-brands fa-html5 skill-icon"></i>
-              <span>HTML</span>
-          </div>
-          <div class="skill-card" data-skill="css">
-              <i class="fa-brands fa-css3-alt skill-icon"></i>
-              <span>CSS</span>
-          </div>
-          <div class="skill-card" data-skill="javascript">
-              <i class="fa-brands fa-square-js skill-icon"></i>
-              <span>JavaScript</span>
-          </div>
-          <div class="skill-card" data-skill="react">
-              <i class="fa-brands fa-react skill-icon"></i>
-              <span>React</span>
-          </div>
-          <div class="skill-card" data-skill="nodejs">
-              <i class="fa-brands fa-node skill-icon"></i>
-              <span>Node.js</span>
-          </div>
-          <div class="skill-card" data-skill="mysql">
-              <i class="fa-solid fa-database skill-icon"></i>
-              <span>MySQL</span>
-          </div>
-      </div>
+        <section id="skills" class="section">
+            <h2>Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-card" data-skill="html">
+                    <i class="fa-brands fa-html5 skill-icon"></i>
+                    <span>HTML</span>
+                </div>
+                <div class="skill-card" data-skill="css">
+                    <i class="fa-brands fa-css3-alt skill-icon"></i>
+                    <span>CSS</span>
+                </div>
+                <div class="skill-card" data-skill="javascript">
+                    <i class="fa-brands fa-square-js skill-icon"></i>
+                    <span>JavaScript</span>
+                </div>
+                <div class="skill-card" data-skill="react">
+                    <i class="fa-brands fa-react skill-icon"></i>
+                    <span>React</span>
+                </div>
+                <div class="skill-card" data-skill="nodejs">
+                    <i class="fa-brands fa-node skill-icon"></i>
+                    <span>Node.js</span>
+                </div>
+                <div class="skill-card" data-skill="mysql">
+                    <i class="fa-solid fa-database skill-icon"></i>
+                    <span>MySQL</span>
+                </div>
+                <div class="skill-card" data-skill="bootstrap">
+                    <i class="fa-brands fa-bootstrap skill-icon"></i>
+                    <span>Bootstrap</span>
+                </div>
+                <div class="skill-card" data-skill="shopify">
+                    <i class="fa-brands fa-shopify skill-icon"></i>
+                    <span>Shopify</span>
+                </div>
+                <div class="skill-card" data-skill="wordpress">
+                    <i class="fa-brands fa-wordpress skill-icon"></i>
+                    <span>WordPress</span>
+                </div>
+            </div>
+        
+            <!-- Tooltip flotante -->
+            <div class="tooltip-message hidden" id="tooltip-message"></div>
+        </section>
+        
+        
   
-      <!-- Contenedor donde se mostrará el mensaje dinámico -->
-      <div class="skill-message" id="skill-message">
-          <p>Tap a skill to see a fun example!</p>
-      </div>
-  </section>
   
-  
-
   <section id="projects" class="section">
-    <h2>Projects</h2>
-    <div class="project-list">
+    <h2>Proyectos</h2>
 
-        <!-- Proyecto 1: Gobe App Technology -->
-        <div class="project-card">
-            <img src="img/gobeapp.png" alt="Gobe App Technology" class="project-image">
-            <h3>Gobe App Technology</h3>
-            <p>Enterprise web site</p>
-            <a href="https://gobeapp.com/" target="_blank" class="project-button">View Demo</a>
+    <div class="project-category">
+        <h3>Websites con HTML & CSS</h3>
+        <p>Desarrollo de sitios web modernos y funcionales utilizando HTML, CSS y JavaScript.</p>
+        
+        <div class="slide-container">
+            <button class="prev-button">&#10094;</button>
+            <div class="slide-track">
+                
+                <!-- 🏢 Proyecto: Gobe App Technology -->
+                <div class="project-slide active">
+                    <img src="img/gobeapp.png" alt="Gobe App Technology" class="project-image">
+                    <div class="project-info">
+                        <h3>Gobe App Technology</h3>
+                        <p>Diseño y desarrollo de una plataforma empresarial con HTML, CSS y JavaScript.</p>
+                        <a href="https://gobeapp.com/" target="_blank" class="project-button">Ver Website</a>
+                    </div>
+                </div>
+    
+                <!-- 🏫 Proyecto: FEC Website Rediseño -->
+                <div class="project-slide">
+                    <img src="img/fec_after.png" alt="FEC Website Redesign" class="project-image">
+                    <div class="project-info">
+                        <h3>FEC Website (Rediseño)</h3>
+                        <p>Rediseño de la web de una institución educativa técnica para mejorar la experiencia de usuario. Proyecto personal a modo de desafío.</p>
+                        <a href="https://www.fec.edu.co/index.php/auth/login/" target="_blank" class="project-button">Ver Web original</a>
+                    </div>
+                </div>
+    
+                <!-- 🎓 Proyecto: Gobe Education -->
+                <div class="project-slide">
+                    <img src="img/gobeeducation.png" alt="Gobe Education" class="project-image">
+                    <div class="project-info">
+                        <h3>Gobe Education</h3>
+                        <p>Plataforma educativa desarrollada con HTML, CSS y JavaScript para mejorar el acceso a la educación online.</p>
+                        <a href="https://gobeapp.com/Gobeeducation.html" target="_blank" class="project-button">Ver Website</a>
+                    </div>
+                </div>
+    
+                <!-- 📖 Proyecto: Far Beyond Learning -->
+                <div class="project-slide">
+                    <img src="img/farbeyond.png" alt="Far Beyond Learning" class="project-image">
+                    <div class="project-info">
+                        <h3>Far Beyond Learning</h3>
+                        <p>Sitio web moderno diseñado para una plataforma de aprendizaje digital.</p>
+                        <a href="https://farbeyond.com.co/" target="_blank" class="project-button">Ver Website</a>
+                    </div>
+                </div>
+    
+                <!-- 🏫 Proyecto: Jardín Pequeños Tesoros (Rediseño) -->
+                <div class="project-slide">
+                    <img src="img/jardinredesign.png" alt="Jardín Pequeños Tesoros Redesign" class="project-image">
+                    <div class="project-info">
+                        <h3>Jardín Pequeños Tesoros</h3>
+                        <p>Rediseño de un sitio web para un preescolar, optimizado para navegabilidad y accesibilidad.</p>
+                    </div>
+                </div>
+    
+            </div>
+            <button class="next-button">&#10095;</button>
         </div>
-
-        <!-- Proyecto 2: Alura Encryptor -->
-        <div class="project-card">
-            <img src="img/alura.png" alt="Alura Encryptor" class="project-image">
-            <h3>Alura Encryptor</h3>
-            <p>Text encryption tool</p>
-            <a href="https://gvbustamante.github.io/Encriptador-alura/" target="_blank" class="project-button">View Demo</a>
-        </div>
-
-        <!-- Proyecto 3: We Make Pilots -->
-        <div class="project-card">
-            <img src="img/websitepilot.png" alt="We Make Pilots" class="project-image">
-            <h3>We Make Pilots</h3>
-            <p>Website for an aviation academy</p>
-            <a href="https://pilotsflaviationcenter.webflow.io/" target="_blank" class="project-button">View Demo</a>
-        </div>
-
-        <!-- Proyecto 4: Jardín Pequeños Tesoros -->
-        <div class="project-card">
-            <img src="img/pequenos.png" alt="Jardín Pequeños Tesoros" class="project-image">
-            <h3>Jardín Pequeños Tesoros</h3>
-            <p>Preschool website</p>
-            <a href="https://jardinpequenostesoros.com/" target="_blank" class="project-button">View Demo</a>
-        </div>
-
-        <!-- Proyecto 5: Social Media Management -->
-        <div class="project-card">
-            <img src="img/socialmedia.png" alt="Social Media Management" class="project-image">
-            <h3>Social Media Management</h3>
-            <p>Instagram brand growth & marketing</p>
-            <a href="#" class="project-button disabled">No Link Available</a>
-        </div>
-
-        <!-- Proyecto 6: Invitations & Games -->
-        <div class="project-card">
-            <img src="img/invitacion.png" alt="Invitations & Games" class="project-image">
-            <h3>Interactive Invitations & Games</h3>
-            <p>Invitations with Scratch & Google Sites</p>
-            <a href="https://sites.google.com/view/notinewsanti/noti-new-santi" target="_blank" class="project-button disabled">View Demo</a>
-        </div>
-
     </div>
+    
+
+  <!-- 🚀 No Code Websites -->
+<div class="project-category">
+    <h3>Websites No Code</h3>
+    <p>Creación de sitios web utilizando plataformas como WordPress, Webflow y Shopify, facilitando soluciones sin necesidad de programación.</p>
+
+    <div class="slide-container">
+        <button class="prev-button">&#10094;</button>
+        <div class="slide-track">
+
+            <!-- 🎓 Proyecto: Marketing Courses Website -->
+            <div class="project-slide active">
+                <img src="img/marketing_courses.png" alt="Marketing Courses Website" class="project-image">
+                <div class="project-info">
+                    <h3>Marketing Courses Website</h3>
+                    <p>Creación de una plataforma de cursos de marketing con WordPress & Elementor.</p>
+                </div>
+            </div>
+
+            <!-- 🛩️ Proyecto: Pilot Academy Website -->
+            <div class="project-slide">
+                <img src="img/websitepilot.png" alt="Pilot Academy Website" class="project-image">
+                <div class="project-info">
+                    <h3>Pilot Academy Website</h3>
+                    <p>Diseño de sitio web para una academia de pilotos con Webflow.</p>
+                    <a href="https://pilotsflaviationcenter.webflow.io/" target="_blank" class="project-button">Ver Proyecto</a>
+                </div>
+            </div>
+
+            <!-- 🏫 Proyecto: Jardín Pequeños Tesoros (Versión WordPress) -->
+            <div class="project-slide">
+                <img src="img/jardinold.png" alt="Jardín Pequeños Tesoros (Old)" class="project-image">
+                <div class="project-info">
+                    <h3>Jardín Pequeños Tesoros (Versión WordPress)</h3>
+                    <p>Sitio web anterior del preescolar, construido con WordPress.</p>
+                    <a href="https://jardinpequenostesoros.com/" target="_blank" class="project-button">Ver Website</a>
+                </div>
+            </div>
+
+            <!-- 🏪 Proyecto: Tienda Online en Shopify -->
+            <div class="project-slide">
+                <img src="img/shopify.png" alt="Ecommerce Store" class="project-image">
+                <div class="project-info">
+                    <h3>Tienda Online en Shopify</h3>
+                    <p>Desarrollo de un ecommerce en Shopify con una experiencia de usuario intuitiva.</p>
+                    
+                </div>
+            </div>
+
+            <!-- 🚗 Proyecto: Sitio Web de Alquiler de Carros Offroad -->
+            <div class="project-slide">
+                <img src="img/caroffroad.png" alt="Offroad Car Rental" class="project-image">
+                <div class="project-info">
+                    <h3>Alquiler de Carros Offroad</h3>
+                    <p>Sitio web en WordPress para alquiler de vehículos todoterreno.</p>
+                   
+                </div>
+            </div>
+
+            <!-- 🏋️ Proyecto: Sitio Web para Gimnasio -->
+            <div class="project-slide">
+                <img src="img/gymweb.png" alt="Gym & Fitness Website" class="project-image">
+                <div class="project-info">
+                    <h3>Sitio Web para Gimnasio</h3>
+                    <p>Diseño y desarrollo de una página web en WordPress para un gimnasio.</p>
+                    
+                </div>
+            </div>
+
+           
+
+        </div>
+        <button class="next-button">&#10095;</button>
+    </div>
+</div>
+
+
+<!-- 📢 Social Media & Branding -->
+<div class="project-category">
+    <h3>Social Media & Branding</h3>
+    <p>Gestión y diseño de contenido para redes sociales de diferentes marcas, desarrollando estrategias visuales para aumentar el engagement y posicionamiento.</p>
+
+    <div class="slide-container">
+        <button class="prev-button">&#10094;</button>
+        <div class="slide-track">
+
+            <!-- 🎨 Proyecto: Diseño de Contenido para Instagram -->
+            <div class="project-slide active">
+                <img src="img/instagram_designs.png" alt="Instagram Designs" class="project-image">
+                <div class="project-info">
+                    <h3>Diseño de Contenido para Instagram</h3>
+                    <p>Creación de publicaciones y estrategias visuales para distintos nichos como fitness, educación, belleza y negocios.</p>
+                    
+                </div>
+            </div>
+
+            <!-- 🏥 Proyecto: Social Media para Fisioterapia -->
+            <div class="project-slide">
+                <img src="img/social_fisioterapia.png" alt="Physiotherapist Social Media" class="project-image">
+                <div class="project-info">
+                    <h3>Social Media para Fisioterapia</h3>
+                    <p>Estrategia de contenido y branding para redes sociales de una profesional en fisioterapia.</p>
+                   
+                </div>
+            </div>
+
+            <!-- 🎶 Proyecto: Branding para Academia de Piano -->
+            <div class="project-slide">
+                <img src="img/branding_pianist.png" alt="Pianist Branding" class="project-image">
+                <div class="project-info">
+                    <h3>Branding para Academia de Piano</h3>
+                    <p>Rediseño de identidad corporativa para una academia de música, incluyendo logo y material promocional.</p>
+                    
+                </div>
+            </div>
+
+            <!-- 🏫 Proyecto: Social Media para Jardín Infantil Pequeños Tesoros -->
+            <div class="project-slide">
+                <img src="img/social_pequenostesoros.png" alt="Pequeños Tesoros Social Media" class="project-image">
+                <div class="project-info">
+                    <h3>Social Media para Jardín Infantil Pequeños Tesoros</h3>
+                    <p>Creación y gestión de una campaña digital enfocada en la promoción del preescolar.</p>
+                    
+                </div>
+            </div>
+
+
+        </div>
+        <button class="next-button">&#10095;</button>
+    </div>
+</div>
+
+<!-- 📚 Proyectos de Interfaz y Herramientas Digitales -->
+<div class="project-category">
+    <h3>Proyectos de Interfaz y Herramientas Digitales</h3>
+    <p>Interfaces interactivas y herramientas digitales diseñadas para mejorar la experiencia del usuario en lectura y seguridad de la información.</p>
+
+    <div class="slide-container">
+        <button class="prev-button">&#10094;</button>
+        <div class="slide-track">
+
+            <!-- 📖 Proyecto: Biblioteca de Libros Online -->
+            <div class="project-slide active">
+                <img src="img/flutterui.png" alt="Biblioteca de Libros Online" class="project-image">
+                <div class="project-info">
+                    <h3>Biblioteca de Libros Online</h3>
+                    <p>Interfaz móvil desarrollada en Flutter, enfocada en ofrecer una experiencia inmersiva para jóvenes amantes de la lectura.</p>
+                    <p>Incluye colecciones de libros de aventuras, novelas, trilogías y series populares.</p>
+                    
+                </div>
+            </div>
+
+            <!-- 🔐 Proyecto: Desencriptador de Texto de Alura -->
+            <div class="project-slide">
+                <img src="img/alura.png" alt="Desencriptador de Texto de Alura" class="project-image">
+                <div class="project-info">
+                    <h3>Desencriptador de Texto</h3>
+                    <p>Aplicación web creada con HTML, CSS y JavaScript que permite encriptar y desencriptar mensajes de forma segura.</p>
+                    <p>Proyecto realizado en el curso de Alura para fortalecer habilidades en manipulación de texto y lógica de programación.</p>
+                    <a href="https://gvbustamante.github.io/Encriptador-alura/" target="_blank" class="project-button">Ver Proyecto</a>
+                </div>
+            </div>
+
+        </div>
+        <button class="next-button">&#10095;</button>
+    </div>
+</div>
+
+
+    <!-- 🎮 Interactive Invitations & Games -->
+    <div class="project-category">
+        <h3>Invitaciones y Juegos Interactivos</h3>
+        <p>Creación de experiencias digitales interactivas con Scratch y Google Sites.</p>
+        <div class="slide-container">
+            <button class="prev-button">&#10094;</button>
+            <div class="slide-track">
+                <div class="project-slide active">
+                    <img src="img/sonic.png" alt="Sonic Birthday Game" class="project-image">
+                    <div class="project-info">
+                        <h3>Juego de Cumpleaños Sonic</h3>
+                        <p>Juego interactivo basado en Scratch con temática de Sonic.</p>
+                        <a href="https://sites.google.com/view/notinewsanti/invitaci%C3%B3n-sonic?authuser=0" target="_blank" class="project-button">Ver Proyecto</a>
+                    </div>
+                </div>
+                <div class="project-slide">
+                    <img src="img/fightgame.png" alt="Fighting Game" class="project-image">
+                    <div class="project-info">
+                        <h3>Juego de Pelea</h3>
+                        <p>Videojuego de lucha creado en Scratch con personajes icónicos.</p>
+                        <a href="https://sites.google.com/view/notinewsanti/video-game?authuser=0" target="_blank" class="project-button">Ver Proyecto</a>
+                    </div>
+                </div>
+            </div>
+            <button class="next-button">&#10095;</button>
+        </div>
+    </div>
+
 </section>
+
+ 
+
 
 
         

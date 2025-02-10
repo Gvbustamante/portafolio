@@ -28,31 +28,42 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 
-document.addEventListener('DOMContentLoaded', () => {
-    const skillCards = document.querySelectorAll('.skill-card');
-    const skillMessage = document.getElementById('skill-message');
+document.addEventListener("DOMContentLoaded", function () {
+    const skillCards = document.querySelectorAll(".skill-card");
+    const tooltip = document.getElementById("tooltip-message");
 
-    // Diccionario de mensajes para cada skill
-    const messages = {
-        html: "HTML: 'Structure your ideas, build your dreams!'<br><code>&lt;h1&gt;Hello, World!&lt;/h1&gt;</code>",
-        css: "CSS: 'Make the web beautiful!'<br><code>body { background-color: #f9f9f9; }</code>",
-        javascript: "JavaScript: 'Bringing life to the web!'<br><code>console.log('Hello, World!');</code>",
-        react: "React: 'Reusable components for a better world!'<br><code>const Button = () => &lt;button&gt;Click Me&lt;/button&gt;;</code>",
-        nodejs: "Node.js: 'Run JavaScript everywhere!'<br><code>console.log('Server running...');</code>",
-        mysql: "MySQL: 'Data stored, dreams secured!'<br><code>SELECT * FROM users;</code>",
+    // 🎯 Mensajes personalizados por cada habilidad
+    const skillMessages = {
+        html: "📜 HTML es la base de la web, estructura todo el contenido.",
+        css: "🎨 CSS da estilo y vida a los sitios web.",
+        javascript: "⚡ JavaScript hace todo interactivo y dinámico.",
+        react: "⚛️ React crea interfaces rápidas y reutilizables.",
+        nodejs: "🌍 Node.js permite usar JavaScript en el backend.",
+        mysql: "🗄️ MySQL almacena datos de manera eficiente y estructurada.",
+        bootstrap: "📱 Bootstrap facilita diseños responsivos y modernos.",
+        shopify: "🛒 Shopify permite crear tiendas online sin código.",
+        wordpress: "🌍 WordPress es el CMS más usado para crear sitios web dinámicos."
     };
 
-    // Agregar evento a cada skill
+    // Evento de clic en cada habilidad
     skillCards.forEach(card => {
-        card.addEventListener('click', () => {
-            const skill = card.getAttribute('data-skill');
-            skillMessage.innerHTML = messages[skill]; // Cambia el mensaje dinámicamente
-            skillMessage.classList.add('show');
+        card.addEventListener("click", () => {
+            const skill = card.getAttribute("data-skill");
 
-            // Ocultar después de 5 segundos
-            setTimeout(() => {
-                skillMessage.classList.remove('show');
-            }, 5000);
+            if (skillMessages[skill]) {
+                tooltip.textContent = skillMessages[skill]; // Muestra el mensaje
+                tooltip.classList.add("show");
+
+                // Ocultar después de 3 segundos
+                setTimeout(() => {
+                    tooltip.classList.add("hide");
+
+                    // Elimina clases después de la animación para volver a usarlo
+                    setTimeout(() => {
+                        tooltip.classList.remove("show", "hide");
+                    }, 500);
+                }, 5000);
+            }
         });
     });
 });
@@ -87,4 +98,42 @@ document.addEventListener("DOMContentLoaded", function () {
             console.error("Error:", error);
         });
     });
+});
+
+
+document.addEventListener("DOMContentLoaded", function () {
+    const carousels = document.querySelectorAll(".slide-container");
+
+    carousels.forEach((carousel) => {
+        const slides = carousel.querySelectorAll(".project-slide");
+        const prevButton = carousel.querySelector(".prev-button");
+        const nextButton = carousel.querySelector(".next-button");
+
+        let currentIndex = 0;
+
+        function showSlide(index) {
+            slides.forEach((slide, i) => {
+                slide.classList.remove("active");
+                if (i === index) {
+                    slide.classList.add("active");
+                }
+            });
+        }
+
+        prevButton.addEventListener("click", () => {
+            currentIndex = currentIndex === 0 ? slides.length - 1 : currentIndex - 1;
+            showSlide(currentIndex);
+        });
+
+        nextButton.addEventListener("click", () => {
+            currentIndex = currentIndex === slides.length - 1 ? 0 : currentIndex + 1;
+            showSlide(currentIndex);
+        });
+
+        showSlide(currentIndex);
+    });
+});
+
+document.addEventListener("DOMContentLoaded", function() {
+    gsap.from(".about-container", { opacity: 0, y: 50, duration: 1 });
 });
