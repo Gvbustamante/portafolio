@@ -9,7 +9,6 @@
 
 /* Reset */
 * {
-    margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
@@ -318,7 +317,6 @@ h1, h2 {
     backdrop-filter: blur(8px); /* 🔹 Efecto de vidrio */
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* 🔹 Sombra elegante */
     transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
-    margin: 10px 0; /* 🔹 Espacio vertical entre slides */
 }
 
 /* 🌟 Efecto Flotante */
@@ -337,7 +335,6 @@ h1, h2 {
     width: 100%;
     height: auto;
     border-radius: 12px;
-    margin-bottom: 20px;
     box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
 }
 
@@ -346,11 +343,16 @@ h1, h2 {
     text-align: left;
 }
 
+.project-category-h3{
+    color: #106372;
+
+}
+
 .project-info h3 {
     font-size: 1.4rem;
     font-weight: 600;
     color: var(--primary-color);
-    margin-bottom: 8px;
+    margin-bottom: 4px;
     
 }
 
@@ -419,7 +421,7 @@ h1, h2 {
 }
 
 .next-button {
-    right: -50px;
+    right: -60px;
 }
 
 /* 📱 Ajustes para Móviles */
@@ -433,8 +435,7 @@ h1, h2 {
         width: 40px;
         height: 40px;
         font-size: 1.3rem;
-        left: -35px;
-        right: -35px;
+       
     }
 
     .project-slide {
