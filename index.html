@@ -1,456 +1,547 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gise Web Developer | Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
-    <script defer src="./js/script.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/particles.js"></script>
-    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.3.0/css/all.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gisella Bustamante — Web Developer & UI/UX</title>
+  <meta name="description" content="Portafolio de Gisella Bustamante, Web Developer especializada en Frontend, UI/UX y Diseño Web." />
+  <meta property="og:title" content="Gisella Bustamante — Web Developer" />
+  <meta property="og:description" content="Construyo sitios modernos que dan vida a las ideas." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
 
-    <!-- Fondo de partículas -->
-    <div id="particles-js"></div>
+  <!-- CURSOR -->
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-follower" id="cursorFollower"></div>
 
-    <!-- Contenedor principal -->
-    <main class="main-content">
-        <section id="about" class="section active">
-            <div class="about-container">
-                <!-- 📸 Imagen de Perfil -->
-                <img src="img/foto perfil.png" alt="Gisella Bustamante" class="profile-photo">
-        
-                <!-- 📜 Texto de Presentación -->
-                <div class="about-text">
-                    <h1>Hi, I'm Gisella Bustamante</h1>
-                    <p>I build modern and professional websites that bring ideas to life.</p>
-        
-                    <!-- 🛠️ Habilidades -->
-                    <div class="about-skills">
-                        <p><strong>Especialidades:</strong> Desarrollo Frontend, UI/UX, Diseño Web</p>
-                        <p><strong>Stack Principal:</strong> HTML, CSS, JavaScript, React.js, WordPress</p>
-                    </div>
-        
-                    <!-- 📖 Frase Motivadora -->
-                    <div class="about-quote">
-                        <p>“El diseño no es solo lo que se ve y se siente. El diseño es cómo funciona.” – Steve Jobs</p>
-                    </div>
-        
-                    <!-- 🔗 Redes Sociales -->
-                    <div class="social-icons">
-                        <a href="https://www.linkedin.com/in/gvbustamante/" target="_blank" class="social-link">
-                            <i class="fa-brands fa-linkedin"></i>
-                        </a>
-                        <a href="https://github.com/Gvbustamante/" target="_blank" class="social-link">
-                            <i class="fa-brands fa-github"></i>
-                        </a>
-                        <a href="https://www.instagram.com/gise.developer/" target="_blank" class="social-link">
-                            <i class="fa-brands fa-instagram"></i>
-                        </a>
-                        <a href="https://www.behance.net/gvbustamante" target="_blank" class="social-link">
-                            <i class="fa-brands fa-behance"></i>
-                        </a>
-                        <a href="https://x.com/GisellaBM" target="_blank" class="social-link">
-                            <i class="fa-brands fa-twitter"></i>
-                        </a>
-                    </div>
-        
-                    <!-- 📂 Botón de Descarga de CV 
-                    <a href="local/local/Currículum2024.pdf" download class="cv-button">Descargar CV</a>-->
-                </div>
-            </div>
-        </section>
-        
-        
-        
-    
-    
-        <section id="skills" class="section">
-            <h2>Skills</h2>
-            <div class="skills-grid">
-                <div class="skill-card" data-skill="html">
-                    <i class="fa-brands fa-html5 skill-icon"></i>
-                    <span>HTML</span>
-                </div>
-                <div class="skill-card" data-skill="css">
-                    <i class="fa-brands fa-css3-alt skill-icon"></i>
-                    <span>CSS</span>
-                </div>
-                <div class="skill-card" data-skill="javascript">
-                    <i class="fa-brands fa-square-js skill-icon"></i>
-                    <span>JavaScript</span>
-                </div>
-                <div class="skill-card" data-skill="react">
-                    <i class="fa-brands fa-react skill-icon"></i>
-                    <span>React</span>
-                </div>
-                <div class="skill-card" data-skill="nodejs">
-                    <i class="fa-brands fa-node skill-icon"></i>
-                    <span>Node.js</span>
-                </div>
-                <div class="skill-card" data-skill="mysql">
-                    <i class="fa-solid fa-database skill-icon"></i>
-                    <span>MySQL</span>
-                </div>
-                <div class="skill-card" data-skill="bootstrap">
-                    <i class="fa-brands fa-bootstrap skill-icon"></i>
-                    <span>Bootstrap</span>
-                </div>
-                <div class="skill-card" data-skill="shopify">
-                    <i class="fa-brands fa-shopify skill-icon"></i>
-                    <span>Shopify</span>
-                </div>
-                <div class="skill-card" data-skill="wordpress">
-                    <i class="fa-brands fa-wordpress skill-icon"></i>
-                    <span>WordPress</span>
-                </div>
-            </div>
-        
-            <!-- Tooltip flotante -->
-            <div class="tooltip-message hidden" id="tooltip-message"></div>
-        </section>
-        
-        
-  
-  
-  <section id="projects" class="section">
-    <h2>Proyectos</h2>
-
-    <div class="project-category">
-        <h3 class="project-category-h3">Websites con HTML & CSS</h3>
-        <p>Desarrollo de sitios web modernos y funcionales utilizando HTML, CSS y JavaScript.</p>
-        
-        <div class="slide-container">
-            <button class="prev-button">&#10094;</button>
-            <div class="slide-track">
-                
-                <!-- 🏢 Proyecto: Gobe App Technology -->
-                <div class="project-slide active">
-                    <img src="img/gobeapp.png" alt="Gobe App Technology" class="project-image">
-                    <div class="project-info">
-                        <h3>Gobe App Technology</h3>
-                        <p>Diseño y desarrollo de una plataforma empresarial con HTML, CSS y JavaScript.</p>
-                        <a href="https://gobeapp.com/" target="_blank" class="project-button">Ver Website</a>
-                    </div>
-                </div>
-    
-                <!-- 🏫 Proyecto: FEC Website Rediseño -->
-                <div class="project-slide">
-                    <img src="img/fec_after.png" alt="FEC Website Redesign" class="project-image">
-                    <div class="project-info">
-                        <h3>FEC Website (Rediseño)</h3>
-                        <p>Rediseño de la web de una institución educativa técnica para mejorar la experiencia de usuario. Proyecto personal a modo de desafío.</p>
-                        <a href="https://gvbustamante.github.io/fec/" target="_blank" class="project-button">Ver Rediseño</a>
-                        <a href="https://www.fec.edu.co/index.php/auth/login/" target="_blank" class="project-button">Ver Web original</a>                        
-                    </div>
-                </div>
-    
-                <!-- 🎓 Proyecto: Gobe Education -->
-                <div class="project-slide">
-                    <img src="img/gobeeducation.png" alt="Gobe Education" class="project-image">
-                    <div class="project-info">
-                        <h3>Gobe Education</h3>
-                        <p>Plataforma educativa desarrollada con HTML, CSS y JavaScript para mejorar el acceso a la educación online.</p>
-                        <a href="https://gobeapp.com/Gobeeducation.html" target="_blank" class="project-button">Ver Website</a>
-                    </div>
-                </div>
-    
-                <!-- 📖 Proyecto: Far Beyond Learning -->
-                <div class="project-slide">
-                    <img src="img/farbeyond.png" alt="Far Beyond Learning" class="project-image">
-                    <div class="project-info">
-                        <h3>Far Beyond Learning</h3>
-                        <p>Sitio web moderno diseñado para una plataforma de aprendizaje digital.</p>
-                        <a href="https://farbeyond.com.co/" target="_blank" class="project-button">Ver Website</a>
-                    </div>
-                </div>
-    
-                <!-- 🏫 Proyecto: Jardín Pequeños Tesoros (Rediseño) -->
-                <div class="project-slide">
-                    <img src="img/jardinredesign.png" alt="Jardín Pequeños Tesoros Redesign" class="project-image">
-                    <div class="project-info">
-                        <h3>Jardín Pequeños Tesoros</h3>
-                        <p>Rediseño de un sitio web para un preescolar, optimizado para navegabilidad y accesibilidad.</p>
-                    </div>
-                </div>
-    
-            </div>
-            <button class="next-button">&#10095;</button>
-        </div>
+  <!-- NAV -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-inner">
+      <a href="#hero" class="nav-logo">GB<span class="dot">.</span></a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Proyectos</a></li>
+        <li><a href="#education">Educación</a></li>
+        <li><a href="#contact" class="nav-cta">Contactar</a></li>
+      </ul>
+      <button class="burger" id="burger" aria-label="Menú">
+        <span></span><span></span><span></span>
+      </button>
     </div>
-    
+  </nav>
 
-  <!-- 🚀 No Code Websites -->
-<div class="project-category">
-    <h3 class="project-category-h3">Websites No Code</h3>
-    <p>Creación de sitios web utilizando plataformas como WordPress, Webflow y Shopify, facilitando soluciones sin necesidad de programación.</p>
-
-    <div class="slide-container">
-        <button class="prev-button">&#10094;</button>
-        <div class="slide-track">
-            <!-- 🏠 Proyecto: Cocinas a Medida (Nuevo) -->
-            <div class="project-slide active">
-                <img src="img/cocinasamedida.png" alt="Cocinas a Medida" class="project-image">
-                <div class="project-info">
-                    <h3>Cocinas a Medida</h3>
-                    <p>Sitio web para negocio de fabricación de cocinas, baños y porcelana. Diseño: Paloma Estudio. Maquetación y SEO: Gisella Bustamante.</p>
-                    <a href="https://paloma-project-ii.webflow.io/" target="_blank" class="project-button">Ver Proyecto</a>
-                </div>
-            </div>
-
-            <!-- 🛩️ Proyecto: Pilot Academy Website -->
-            <div class="project-slide">
-                <img src="img/websitepilot.png" alt="Pilot Academy Website" class="project-image">
-                <div class="project-info">
-                    <h3>Pilot Academy Website</h3>
-                    <p>Diseño de sitio web para una academia de pilotos con Webflow.</p>
-                    <a href="https://pilotsflaviationcenter.webflow.io/" target="_blank" class="project-button">Ver Proyecto</a>
-                </div>
-            </div>
-
-             <!-- 🚗 Proyecto: Sitio Web de Alquiler de Carros Offroad -->
-             <div class="project-slide">
-                <img src="img/caroffroad.png" alt="Offroad Car Rental" class="project-image">
-                <div class="project-info">
-                    <h3>Alquiler de Carros Offroad</h3>
-                    <p>Sitio web en WordPress para alquiler de vehículos todoterreno, Maquetación y Diseño: Gisella Bustamante</p>
-                   
-                </div>
-            </div>
-
-             <!-- 🏋️ Proyecto: Sitio Web para Gimnasio -->
-             <div class="project-slide">
-                <img src="img/gymweb.png" alt="Gym & Fitness Website" class="project-image">
-                <div class="project-info">
-                    <h3>Sitio Web para Gimnasio</h3>
-                    <p>Diseño y desarrollo de una página web en WordPress para un gimnasio.</p>
-                    
-                </div>
-            </div>
-
-            <!-- 🏫 Proyecto: Jardín Pequeños Tesoros (Versión WordPress) -->
-            <div class="project-slide">
-                <img src="img/jardinold.png" alt="Jardín Pequeños Tesoros (Old)" class="project-image">
-                <div class="project-info">
-                    <h3>Jardín Pequeños Tesoros (Versión WordPress)</h3>
-                    <p>Sitio web anterior del preescolar, construido con WordPress.</p>
-                    <a href="https://jardinpequenostesoros.com/" target="_blank" class="project-button">Ver Website</a>
-                </div>
-            </div>
-
-            <!-- 🏪 Proyecto: Tienda Online en Shopify -->
-            <div class="project-slide">
-                <img src="img/shopify.png" alt="Ecommerce Store" class="project-image">
-                <div class="project-info">
-                    <h3>Tienda Online en Shopify</h3>
-                    <p>Desarrollo de un ecommerce en Shopify con una experiencia de usuario intuitiva.</p>
-                    
-                </div>
-            </div>
-
-           
-             <!-- 🎓 Proyecto: Marketing Courses Website -->
-             <div class="project-slide">
-                <img src="img/marketing_courses.png" alt="Marketing Courses Website" class="project-image">
-                <div class="project-info">
-                    <h3>Marketing Courses Website</h3>
-                    <p>Creación de una plataforma de cursos de marketing con WordPress & Elementor.</p>
-                </div>
-            </div>
-
-           
-
-        </div>
-        <button class="next-button">&#10095;</button>
+  <!-- HERO -->
+  <section class="hero" id="hero">
+    <div class="hero-bg">
+      <div class="orb orb-1"></div>
+      <div class="orb orb-2"></div>
+      <div class="grid-lines"></div>
     </div>
-</div>
-
-
-<!-- 📢 Social Media & Branding -->
-<div class="project-category">
-    <h3 class="project-category-h3">Social Media & Branding</h3>
-    <p>Gestión y diseño de contenido para redes sociales de diferentes marcas, desarrollando estrategias visuales para aumentar el engagement y posicionamiento.</p>
-
-    <div class="slide-container">
-        <button class="prev-button">&#10094;</button>
-        <div class="slide-track">
-
-            <!-- 🎨 Proyecto: Diseño de Contenido para Instagram -->
-            <div class="project-slide active">
-                <img src="img/instagram_designs.png" alt="Instagram Designs" class="project-image">
-                <div class="project-info">
-                    <h3>Diseño de Contenido para Instagram</h3>
-                    <p>Creación de publicaciones y estrategias visuales para distintos nichos como fitness, educación, belleza y negocios.</p>
-                    
-                </div>
-            </div>
-
-            <!-- 🏥 Proyecto: Social Media para Fisioterapia -->
-            <div class="project-slide">
-                <img src="img/social_fisioterapia.png" alt="Physiotherapist Social Media" class="project-image">
-                <div class="project-info">
-                    <h3>Social Media para Fisioterapia</h3>
-                    <p>Estrategia de contenido y branding para redes sociales de una profesional en fisioterapia.</p>
-                   
-                </div>
-            </div>
-
-            <!-- 🎶 Proyecto: Branding para Academia de Piano -->
-            <div class="project-slide">
-                <img src="img/branding_pianist.png" alt="Pianist Branding" class="project-image">
-                <div class="project-info">
-                    <h3>Branding para Academia de Piano</h3>
-                    <p>Rediseño de identidad corporativa para una academia de música, incluyendo logo y material promocional.</p>
-                    
-                </div>
-            </div>
-
-            <!-- 🏫 Proyecto: Social Media para Jardín Infantil Pequeños Tesoros -->
-            <div class="project-slide">
-                <img src="img/social_pequenostesoros.png" alt="Pequeños Tesoros Social Media" class="project-image">
-                <div class="project-info">
-                    <h3>Social Media para Jardín Infantil Pequeños Tesoros</h3>
-                    <p>Creación y gestión de una campaña digital enfocada en la promoción del preescolar.</p>
-                    
-                </div>
-            </div>
-
-
+    <div class="hero-inner">
+      <div class="hero-text">
+        <div class="badge">
+          <span class="badge-dot"></span>
+          Disponible para proyectos
         </div>
-        <button class="next-button">&#10095;</button>
-    </div>
-</div>
-
-<!-- 📚 Proyectos de Interfaz y Herramientas Digitales -->
-<div class="project-category">
-    <h3 class="project-category-h3">Proyectos de Interfaz y Herramientas Digitales</h3>
-    <p>Interfaces interactivas y herramientas digitales diseñadas para mejorar la experiencia del usuario en lectura y seguridad de la información.</p>
-
-    <div class="slide-container">
-        <button class="prev-button">&#10094;</button>
-        <div class="slide-track">
-
-            <!-- 📖 Proyecto: Biblioteca de Libros Online -->
-            <div class="project-slide active">
-                <img src="img/flutterui.png" alt="Biblioteca de Libros Online" class="project-image">
-                <div class="project-info">
-                    <h3>Biblioteca de Libros Online</h3>
-                    <p>Interfaz móvil desarrollada en Flutter, enfocada en ofrecer una experiencia inmersiva para jóvenes amantes de la lectura.</p>
-                    <p>Incluye colecciones de libros de aventuras, novelas, trilogías y series populares.</p>
-                    
-                </div>
-            </div>
-
-            <!-- 🔐 Proyecto: Desencriptador de Texto de Alura -->
-            <div class="project-slide">
-                <img src="img/alura.png" alt="Desencriptador de Texto de Alura" class="project-image">
-                <div class="project-info">
-                    <h3>Desencriptador de Texto</h3>
-                    <p>Aplicación web creada con HTML, CSS y JavaScript que permite encriptar y desencriptar mensajes de forma segura.</p>
-                    <p>Proyecto realizado en el curso de Alura para fortalecer habilidades en manipulación de texto y lógica de programación.</p>
-                    <a href="https://gvbustamante.github.io/Encriptador-alura/" target="_blank" class="project-button">Ver Proyecto</a>
-                </div>
-            </div>
-
+        <h1 class="hero-title">
+          Hola, soy<br/>
+          <span class="gradient-text">Gisella</span><br/>
+          Bustamante
+        </h1>
+        <p class="hero-sub">Web Developer · UI/UX · Diseño Web</p>
+        <p class="hero-desc">Construyo sitios modernos y profesionales que dan vida a las ideas. Desde el código hasta el diseño, cada píxel tiene un propósito.</p>
+        <div class="hero-actions">
+          <a href="#projects" class="btn btn-primary">Ver proyectos</a>
+          <a href="#contact" class="btn btn-ghost">Hablemos →</a>
         </div>
-        <button class="next-button">&#10095;</button>
-    </div>
-</div>
-
-
-    <!-- 🎮 Interactive Invitations & Games -->
-    <div class="project-category">
-        <h3 class="project-category-h3">Invitaciones y Juegos Interactivos</h3>
-        <p>Creación de experiencias digitales interactivas con Scratch y Google Sites.</p>
-        <div class="slide-container">
-            <button class="prev-button">&#10094;</button>
-            <div class="slide-track">
-                <div class="project-slide active">
-                    <img src="img/sonic.png" alt="Sonic Birthday Game" class="project-image">
-                    <div class="project-info">
-                        <h3>Juego de Cumpleaños Sonic</h3>
-                        <p>Juego interactivo basado en Scratch con temática de Sonic.</p>
-                        <a href="https://sites.google.com/view/notinewsanti/invitaci%C3%B3n-sonic?authuser=0" target="_blank" class="project-button">Ver Proyecto</a>
-                    </div>
-                </div>
-                <div class="project-slide">
-                    <img src="img/fightgame.png" alt="Fighting Game" class="project-image">
-                    <div class="project-info">
-                        <h3>Juego de Pelea</h3>
-                        <p>Videojuego de lucha creado en Scratch con personajes icónicos.</p>
-                        <a href="https://sites.google.com/view/notinewsanti/video-game?authuser=0" target="_blank" class="project-button">Ver Proyecto</a>
-                    </div>
-                </div>
-            </div>
-            <button class="next-button">&#10095;</button>
+        <div class="hero-stack">
+          <span>HTML</span><span>CSS</span><span>JS</span><span>React</span><span>WordPress</span><span>Webflow</span>
         </div>
-    </div>
-
-</section>
-
-
-
-        
-<section id="education" class="section">
-  <h2>Education</h2>
-  <div class="education-grid">
-      <div class="education-card">
-          <img src="img/usanjose.png" alt="San José University Foundation">
-          <h3>San José University Foundation</h3>
-          <p>Systems Engineer | 2023</p>
       </div>
-      <div class="education-card">
-          <img src="img/oneOracle-logo.png" alt="Oracle Next Education">
-          <h3>Oracle Next Education</h3>
-          <p>Front-End Developer | 2023</p>
+      <div class="hero-photo">
+        <div class="photo-ring">
+          <div class="photo-ring-inner">
+            <img src="img/foto perfil.png" alt="Gisella Bustamante" class="profile-img" />
+          </div>
+        </div>
+        <div class="floating-card card-1">
+          <span class="card-icon">⚡</span>
+          <div>
+            <strong>Frontend Dev</strong>
+            <small>React · HTML · CSS</small>
+          </div>
+        </div>
+        <div class="floating-card card-2">
+          <span class="card-icon">🎨</span>
+          <div>
+            <strong>UI/UX Design</strong>
+            <small>Figma · Webflow</small>
+          </div>
+        </div>
       </div>
-      <div class="education-card">
-          <img src="img/fec-logo.png" alt="Caribbean Business Foundation">
-          <h3>Caribbean Business Foundation</h3>
-          <p>Technical Certificate in Software Systems | 2022</p>
+    </div>
+    <div class="scroll-hint">
+      <span>Scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section class="skills section" id="skills">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-label">Expertise</span>
+        <h2>Stack & <span class="gradient-text">Habilidades</span></h2>
       </div>
-      <div class="education-card">
-          <img src="img/politecnico-logo.png" alt="Colombian Polytechnic">
-          <h3>Colombian Polytechnic</h3>
-          <p>Java Programming Diploma | 2022</p>
+      <div class="skills-grid">
+        <div class="skill-group reveal">
+          <div class="skill-group-header">
+            <span class="skill-icon">💻</span>
+            <h3>Código</h3>
+          </div>
+          <div class="skill-pills">
+            <span class="pill pill-code">HTML5</span>
+            <span class="pill pill-code">CSS3</span>
+            <span class="pill pill-code">JavaScript</span>
+            <span class="pill pill-code">React.js</span>
+            <span class="pill pill-code">Node.js</span>
+            <span class="pill pill-code">MySQL</span>
+            <span class="pill pill-code">Bootstrap</span>
+            <span class="pill pill-code">Flutter</span>
+          </div>
+        </div>
+        <div class="skill-group reveal">
+          <div class="skill-group-header">
+            <span class="skill-icon">🧩</span>
+            <h3>No-Code</h3>
+          </div>
+          <div class="skill-pills">
+            <span class="pill pill-nocode">WordPress</span>
+            <span class="pill pill-nocode">Webflow</span>
+            <span class="pill pill-nocode">Shopify</span>
+            <span class="pill pill-nocode">Elementor</span>
+          </div>
+        </div>
+        <div class="skill-group reveal">
+          <div class="skill-group-header">
+            <span class="skill-icon">✦</span>
+            <h3>Diseño</h3>
+          </div>
+          <div class="skill-pills">
+            <span class="pill pill-design">UI/UX</span>
+            <span class="pill pill-design">Figma</span>
+            <span class="pill pill-design">Branding</span>
+            <span class="pill pill-design">Social Media</span>
+            <span class="pill pill-design">SEO</span>
+          </div>
+        </div>
       </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section class="projects section" id="projects">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-label">Trabajo</span>
+        <h2>Mis <span class="gradient-text">Proyectos</span></h2>
+      </div>
+      <div class="tabs reveal">
+        <button class="tab active" data-filter="all">Todos</button>
+        <button class="tab" data-filter="html-css">HTML & CSS</button>
+        <button class="tab" data-filter="no-code">No-Code</button>
+        <button class="tab" data-filter="social">Social & Brand</button>
+        <button class="tab" data-filter="ui">UI & Apps</button>
+        <button class="tab" data-filter="games">Juegos</button>
+      </div>
+      <div class="projects-grid" id="projectsGrid">
+
+        <div class="project-card reveal" data-category="html-css">
+          <div class="project-img-wrap">
+            <img src="img/gobeapp.png" alt="Gobe App Technology" loading="lazy"/>
+            <div class="project-overlay">
+              <a href="https://gobeapp.com/" target="_blank" class="overlay-btn">Ver sitio ↗</a>
+            </div>
+          </div>
+          <div class="project-info">
+            <div class="project-tags"><span>HTML</span><span>CSS</span><span>JS</span></div>
+            <h3>Gobe App Technology</h3>
+            <p>Plataforma empresarial completa — diseño y desarrollo.</p>
+          </div>
+        </div>
+
+        <div class="project-card reveal" data-category="html-css">
+          <div class="project-img-wrap">
+            <img src="img/fec_after.png" alt="FEC Website Redesign" loading="lazy"/>
+            <div class="project-overlay">
+              <a href="https://gvbustamante.github.io/fec/" target="_blank" class="overlay-btn">Ver rediseño ↗</a>
+              <a href="https://www.fec.edu.co/index.php/auth/login/" target="_blank" class="overlay-btn overlay-btn-ghost">Original ↗</a>
+            </div>
+          </div>
+          <div class="project-info">
+            <div class="project-tags"><span>HTML</span><span>CSS</span><span>Rediseño</span></div>
+            <h3>FEC Website Redesign</h3>
+            <p>Rediseño de institución educativa para mejorar UX.</p>
+          </div>
+        </div>
+
+        <div class="project-card reveal" data-category="html-css">
+          <div class="project-img-wrap">
+            <img src="img/gobeeducation.png" alt="Gobe Education" loading="lazy"/>
+            <div class="project-overlay">
+              <a href="https://gobeapp.com/Gobeeducation.html" target="_blank" class="overlay-btn">Ver sitio ↗</a>
+            </div>
+          </div>
+          <div class="project-info">
+            <div class="project-tags"><span>HTML</span><span>CSS</span><span>JS</span></div>
+            <h3>Gobe Education</h3>
+            <p>Plataforma educativa online accesible y moderna.</p>
+          </div>
+        </div>
+
+        <div class="project-card reveal" data-category="html-css">
+          <div class="project-img-wrap">
+            <img src="img/farbeyond.png" alt="Far Beyond Learning" loading="lazy"/>
+            <div class="project-overlay">
+              <a href="https://farbeyond.com.co/" target="_blank" class="overlay-btn">Ver sitio ↗</a>
+            </div>
+          </div>
+          <div class="project-info">
+            <div class="project-tags"><span>HTML</span><span>CSS</span><span>JS</span></div>
+            <h3>Far Beyond Learning</h3>
+            <p>Plataforma de aprendizaje digital con diseño moderno.</p>
+          </div>
+        </div>
+
+        <div class="project-card reveal" data-category="html-css">
+          <div class="project-img-wrap">
+            <img src="img/jardinredesign.png" alt="Jardín Pequeños Tesoros" loading="lazy"/>
+            <div class="project-overlay">
+              <span class="overlay-label">Rediseño personal</span>
+            </div>
+          </div>
+          <div class="project-info">
+            <div class="project-tags"><span>HTML</span><span>CSS</span><span>Rediseño</span></div>
+            <h3>Jardín Pequeños Tesoros</h3>
+            <p>Rediseño de preescolar optimizado para accesibilidad.</p>
+          </div>
+        </div>
+
+        <div class="project-card reveal" data-category="no-code">
+          <div class="project-img-wrap">
+            <img src="img/cocinasamedida.png" alt="Cocinas a Medida" loading="lazy"/>
+            <div class="project-overlay">
+              <a href="https://paloma-project-ii.webflow.io/" target="_blank" class="overlay-btn">Ver proyecto ↗</a>
+            </div>
+          </div>
+          <div class="project-info">
+            <div class="project-tags"><span>Webflow</span><span>SEO</span></div>
+            <h3>Cocinas a Medida</h3>
+            <p>Sitio web para negocio de cocinas y baños a medida.</p>
+          </div>
+        </div>
+
+        <div class="project-card reveal" data-category="no-code">
+          <div class="project-img-wrap">
+            <img src="img/websitepilot.png" alt="Pilot Academy" loading="lazy"/>
+            <div class="project-overlay">
+              <a href="https://pilotsflaviationcenter.webflow.io/" target="_blank" class="overlay-btn">Ver proyecto ↗</a>
+            </div>
+          </div>
+          <div class="project-info">
+            <div class="project-tags"><span>Webflow</span><span>UI/UX</span></div>
+            <h3>Pilot Academy Website</h3>
+            <p>Academia de pilotos — diseño en Webflow.</p>
+          </div>
+        </div>
+
+        <div class="project-card reveal" data-category="no-code">
+          <div class="project-img-wrap">
+            <img src="img/caroffroad.png" alt="Offroad Car Rental" loading="lazy"/>
+            <div class="project-overlay">
+              <span class="overlay-label">WordPress · Diseño propio</span>
+            </div>
+          </div>
+          <div class="project-info">
+            <div class="project-tags"><span>WordPress</span><span>Diseño</span></div>
+            <h3>Alquiler de Carros Offroad</h3>
+            <p>Sitio WordPress para alquiler de vehículos todoterreno.</p>
+          </div>
+        </div>
+
+        <div class="project-card reveal" data-category="no-code">
+          <div class="project-img-wrap">
+            <img src="img/gymweb.png" alt="Gym Website" loading="lazy"/>
+            <div class="project-overlay">
+              <span class="overlay-label">WordPress</span>
+            </div>
+          </div>
+          <div class="project-info">
+            <div class="project-tags"><span>WordPress</span><span>UI/UX</span></div>
+            <h3>Sitio Web para Gimnasio</h3>
+            <p>Diseño y desarrollo WordPress para fitness.</p>
+          </div>
+        </div>
+
+        <div class="project-card reveal" data-category="no-code">
+          <div class="project-img-wrap">
+            <img src="img/shopify.png" alt="Ecommerce Shopify" loading="lazy"/>
+            <div class="project-overlay">
+              <span class="overlay-label">Shopify</span>
+            </div>
+          </div>
+          <div class="project-info">
+            <div class="project-tags"><span>Shopify</span><span>Ecommerce</span></div>
+            <h3>Tienda Online en Shopify</h3>
+            <p>Ecommerce con experiencia de usuario intuitiva.</p>
+          </div>
+        </div>
+
+        <div class="project-card reveal" data-category="no-code">
+          <div class="project-img-wrap">
+            <img src="img/marketing_courses.png" alt="Marketing Courses" loading="lazy"/>
+            <div class="project-overlay">
+              <span class="overlay-label">WordPress · Elementor</span>
+            </div>
+          </div>
+          <div class="project-info">
+            <div class="project-tags"><span>WordPress</span><span>Elementor</span></div>
+            <h3>Marketing Courses Website</h3>
+            <p>Plataforma de cursos de marketing digital.</p>
+          </div>
+        </div>
+
+        <div class="project-card reveal" data-category="social">
+          <div class="project-img-wrap">
+            <img src="img/instagram_designs.png" alt="Instagram Designs" loading="lazy"/>
+            <div class="project-overlay">
+              <span class="overlay-label">Social Media Design</span>
+            </div>
+          </div>
+          <div class="project-info">
+            <div class="project-tags"><span>Diseño</span><span>Social Media</span></div>
+            <h3>Contenido para Instagram</h3>
+            <p>Estrategias visuales para fitness, educación, belleza y negocios.</p>
+          </div>
+        </div>
+
+        <div class="project-card reveal" data-category="social">
+          <div class="project-img-wrap">
+            <img src="img/social_fisioterapia.png" alt="Fisioterapia Social Media" loading="lazy"/>
+            <div class="project-overlay">
+              <span class="overlay-label">Branding · Content</span>
+            </div>
+          </div>
+          <div class="project-info">
+            <div class="project-tags"><span>Branding</span><span>Redes</span></div>
+            <h3>Social Media — Fisioterapia</h3>
+            <p>Estrategia de contenido y branding para profesional de salud.</p>
+          </div>
+        </div>
+
+        <div class="project-card reveal" data-category="social">
+          <div class="project-img-wrap">
+            <img src="img/branding_pianist.png" alt="Pianist Branding" loading="lazy"/>
+            <div class="project-overlay">
+              <span class="overlay-label">Identidad corporativa</span>
+            </div>
+          </div>
+          <div class="project-info">
+            <div class="project-tags"><span>Branding</span><span>Logo</span></div>
+            <h3>Branding — Academia de Piano</h3>
+            <p>Rediseño de identidad corporativa, logo y material promocional.</p>
+          </div>
+        </div>
+
+        <div class="project-card reveal" data-category="social">
+          <div class="project-img-wrap">
+            <img src="img/social_pequenostesoros.png" alt="Pequeños Tesoros Social" loading="lazy"/>
+            <div class="project-overlay">
+              <span class="overlay-label">Social Media Campaign</span>
+            </div>
+          </div>
+          <div class="project-info">
+            <div class="project-tags"><span>Social Media</span><span>Campaña</span></div>
+            <h3>Social Media — Jardín Infantil</h3>
+            <p>Campaña digital para promoción de preescolar.</p>
+          </div>
+        </div>
+
+        <div class="project-card reveal" data-category="ui">
+          <div class="project-img-wrap">
+            <img src="img/flutterui.png" alt="Biblioteca Flutter" loading="lazy"/>
+            <div class="project-overlay">
+              <span class="overlay-label">Flutter UI</span>
+            </div>
+          </div>
+          <div class="project-info">
+            <div class="project-tags"><span>Flutter</span><span>Mobile UI</span></div>
+            <h3>Biblioteca de Libros Online</h3>
+            <p>Interfaz móvil en Flutter para jóvenes amantes de la lectura.</p>
+          </div>
+        </div>
+
+        <div class="project-card reveal" data-category="ui">
+          <div class="project-img-wrap">
+            <img src="img/alura.png" alt="Desencriptador Alura" loading="lazy"/>
+            <div class="project-overlay">
+              <a href="https://gvbustamante.github.io/Encriptador-alura/" target="_blank" class="overlay-btn">Ver proyecto ↗</a>
+            </div>
+          </div>
+          <div class="project-info">
+            <div class="project-tags"><span>HTML</span><span>CSS</span><span>JS</span></div>
+            <h3>Desencriptador de Texto</h3>
+            <p>App web para encriptar y desencriptar mensajes — Alura.</p>
+          </div>
+        </div>
+
+        <div class="project-card reveal" data-category="games">
+          <div class="project-img-wrap">
+            <img src="img/sonic.png" alt="Sonic Game" loading="lazy"/>
+            <div class="project-overlay">
+              <a href="https://sites.google.com/view/notinewsanti/invitaci%C3%B3n-sonic?authuser=0" target="_blank" class="overlay-btn">Ver proyecto ↗</a>
+            </div>
+          </div>
+          <div class="project-info">
+            <div class="project-tags"><span>Scratch</span><span>Google Sites</span></div>
+            <h3>Juego de Cumpleaños Sonic</h3>
+            <p>Juego interactivo con temática Sonic para invitación especial.</p>
+          </div>
+        </div>
+
+        <div class="project-card reveal" data-category="games">
+          <div class="project-img-wrap">
+            <img src="img/fightgame.png" alt="Fighting Game" loading="lazy"/>
+            <div class="project-overlay">
+              <a href="https://sites.google.com/view/notinewsanti/video-game?authuser=0" target="_blank" class="overlay-btn">Ver proyecto ↗</a>
+            </div>
+          </div>
+          <div class="project-info">
+            <div class="project-tags"><span>Scratch</span><span>Google Sites</span></div>
+            <h3>Juego de Pelea</h3>
+            <p>Videojuego de lucha con personajes icónicos en Scratch.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- EDUCATION -->
+  <section class="education section" id="education">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-label">Formación</span>
+        <h2>Mi <span class="gradient-text">Educación</span></h2>
+      </div>
+      <div class="timeline">
+        <div class="timeline-item reveal">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <span class="timeline-year">2023</span>
+            <h3>Ingeniería de Sistemas</h3>
+            <p>Fundación Universitaria San José</p>
+          </div>
+        </div>
+        <div class="timeline-item reveal">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <span class="timeline-year">2023</span>
+            <h3>Front-End Developer</h3>
+            <p>Oracle Next Education (ONE)</p>
+          </div>
+        </div>
+        <div class="timeline-item reveal">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <span class="timeline-year">2022</span>
+            <h3>Técnico en Sistemas de Software</h3>
+            <p>Fundación Caribbean Business (FEC)</p>
+          </div>
+        </div>
+        <div class="timeline-item reveal">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <span class="timeline-year">2022</span>
+            <h3>Diplomado en Programación Java</h3>
+            <p>Politécnico Colombiano</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="contact section" id="contact">
+    <div class="container">
+      <div class="contact-grid">
+        <div class="contact-left reveal">
+          <span class="section-label">Contacto</span>
+          <h2>¿Tienes un <span class="gradient-text">proyecto</span>?</h2>
+          <p>Estoy disponible para trabajos freelance, colaboraciones y oportunidades full-time. Cuéntame tu idea.</p>
+          <div class="contact-links">
+            <a href="mailto:gvbustamante@example.com" class="contact-link">
+              <span class="contact-link-icon">✉</span>
+              Email
+            </a>
+            <a href="https://github.com/gvbustamante" target="_blank" class="contact-link">
+              <span class="contact-link-icon">⌥</span>
+              GitHub
+            </a>
+            <a href="https://linkedin.com/in/gvbustamante" target="_blank" class="contact-link">
+              <span class="contact-link-icon">in</span>
+              LinkedIn
+            </a>
+          </div>
+        </div>
+        <div class="contact-right reveal">
+          <form class="contact-form" id="contactForm" novalidate>
+            <div class="form-group">
+              <label for="name">Nombre</label>
+              <input type="text" id="name" name="name" placeholder="Tu nombre" required />
+              <span class="field-error" id="nameError">Por favor ingresa tu nombre.</span>
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" placeholder="tu@email.com" required />
+              <span class="field-error" id="emailError">Ingresa un email válido.</span>
+            </div>
+            <div class="form-group">
+              <label for="message">Mensaje</label>
+              <textarea id="message" name="message" rows="5" placeholder="Cuéntame sobre tu proyecto..." required></textarea>
+              <span class="field-error" id="messageError">Por favor escribe tu mensaje.</span>
+            </div>
+            <button type="submit" class="btn btn-primary btn-full">
+              <span class="btn-text">Enviar mensaje</span>
+              <span class="btn-arrow">→</span>
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-inner">
+        <a href="#hero" class="nav-logo">GB<span class="dot">.</span></a>
+        <p class="footer-copy">© 2025 Gisella Bustamante. Diseño & Desarrollo propio.</p>
+        <a href="#hero" class="back-top">↑ Inicio</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- TOAST -->
+  <div class="toast" id="toast">
+    <span class="toast-icon">✅</span>
+    <span id="toastMsg">¡Mensaje enviado con éxito!</span>
   </div>
-</section>
 
-
-
-
-<section id="contact" class="section">
-  <h2>Contact Me</h2>
-  <div class="contact-container">
-      <p>Fill out the form and I'll get back to you soon!</p>
-
-      <form id="contact-form">
-          <input type="text" name="entry.1228903921" placeholder="Your Name" required>
-          <input type="email" name="entry.1869697311" placeholder="Your Email" required>
-          <textarea name="entry.156780028" placeholder="Your Message" required></textarea>
-          <button type="submit">Send Message</button>
-      </form>
-
-      <!-- Mensaje de confirmación -->
-      <p id="form-response" class="hidden">✅ Your message has been sent successfully!</p>
-  </div>
-</section>
-
-
-
-    </main>
-
-    <!-- Menú inferior -->
-    <nav class="bottom-nav">
-        <a href="#about" class="nav-item active"><i class="fa-solid fa-user"></i></a>
-        <a href="#skills" class="nav-item"><i class="fa-solid fa-star"></i></a>
-        <a href="#projects" class="nav-item"><i class="fa-solid fa-briefcase"></i></a>
-        <a href="#education" class="nav-item"><i class="fa-solid fa-graduation-cap"></i></a>
-        <a href="#contact" class="nav-item"><i class="fa-solid fa-envelope"></i></a>
-    </nav>
-
+  <script src="js/main.js"></script>
 </body>
 </html>
