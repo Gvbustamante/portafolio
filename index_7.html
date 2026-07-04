@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Gisella Bustamante — Web Developer & UI/UX</title>
+<meta name="description" content="Construyo sitios modernos que dan vida a las ideas.">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+:root{
+--bg:#0a0e27;--glass:rgba(26,31,58,.55);--glass2:rgba(37,45,77,.4);--border:rgba(255,255,255,.1);
+--accent:#7c3aed;--accent2:#a78bfa;--text:#f8fafc;--text2:#cbd5e1;--muted:#8b93a8;
+}
+body{font-family:-apple-system,'Segoe UI',sans-serif;background:linear-gradient(135deg,var(--bg),#0f1429);color:var(--text);min-height:100vh;overflow-x:hidden}
+a{color:inherit}
+header{position:fixed;top:0;left:0;right:0;z-index:100;backdrop-filter:blur(10px);background:rgba(10,14,39,.85);border-bottom:1px solid var(--border);padding:1rem 2rem}
+.header-content{max-width:1100px;margin:0 auto;display:flex;justify-content:space-between;align-items:center}
+.logo{font-weight:800;font-size:1.4rem;background:linear-gradient(135deg,var(--accent),var(--accent2));-webkit-background-clip:text;-webkit-text-fill-color:transparent}
+nav a{text-decoration:none;color:var(--text2);margin-left:1.6rem;font-size:.88rem}
+nav a:hover{color:var(--accent2)}
+.cta{background:linear-gradient(135deg,var(--accent),var(--accent2));padding:.6rem 1.3rem;border-radius:50px;text-decoration:none;font-size:.85rem;font-weight:600}
+.hero{min-height:100vh;display:flex;align-items:center;padding:6rem 2rem 2rem;position:relative;max-width:1100px;margin:0 auto;gap:3rem;flex-wrap:wrap}
+.hero::before{content:'';position:absolute;top:-20%;right:-10%;width:500px;height:500px;background:radial-gradient(circle,rgba(124,58,237,.35),transparent 70%);filter:blur(60px);z-index:-1;animation:blob1 8s ease-in-out infinite}
+.hero::after{content:'';position:absolute;bottom:-20%;left:-10%;width:400px;height:400px;background:radial-gradient(circle,rgba(167,139,250,.3),transparent 70%);filter:blur(60px);z-index:-1;animation:blob2 10s ease-in-out infinite}
+@keyframes blob1{0%,100%{background:radial-gradient(circle,rgba(124,58,237,.35),transparent 70%);transform:translate(0,0) scale(1)}33%{background:radial-gradient(circle,rgba(236,72,153,.3),transparent 70%);transform:translate(-30px,20px) scale(1.1)}66%{background:radial-gradient(circle,rgba(59,130,246,.3),transparent 70%);transform:translate(20px,-20px) scale(.95)}}
+@keyframes blob2{0%,100%{background:radial-gradient(circle,rgba(167,139,250,.3),transparent 70%);transform:translate(0,0) scale(1)}33%{background:radial-gradient(circle,rgba(34,211,238,.25),transparent 70%);transform:translate(30px,-15px) scale(1.15)}66%{background:radial-gradient(circle,rgba(251,191,36,.2),transparent 70%);transform:translate(-20px,15px) scale(.9)}}
+.hero-photo{position:relative}
+.hero-photo::before{content:'';position:absolute;inset:-8px;border-radius:24px;background:conic-gradient(from 0deg,#7c3aed,#ec4899,#3b82f6,#22d3ee,#7c3aed);animation:spin 6s linear infinite;z-index:-1}
+@keyframes spin{to{transform:rotate(360deg)}}
+.hero-text{flex:1;min-width:280px}
+.badge{display:inline-block;background:var(--glass);border:1px solid var(--border);padding:.4rem 1rem;border-radius:50px;font-size:.8rem;color:var(--accent2);margin-bottom:1.2rem}
+.hero h1{font-size:clamp(2rem,6vw,3.2rem);font-weight:800;line-height:1.15;margin-bottom:.6rem}
+.hero .sub{color:var(--accent2);font-weight:600;margin-bottom:1rem}
+.hero p{color:var(--text2);margin-bottom:1.5rem;max-width:480px}
+.stack-pills{display:flex;flex-wrap:wrap;gap:.5rem;margin-bottom:1.5rem}
+.pill{background:var(--glass);border:1px solid var(--border);padding:.3rem .8rem;border-radius:20px;font-size:.75rem;color:var(--text2)}
+.btns{display:flex;gap:1rem;flex-wrap:wrap}
+.btn-p{background:linear-gradient(135deg,var(--accent),var(--accent2));padding:.85rem 1.6rem;border-radius:50px;text-decoration:none;font-weight:600}
+.btn-s{background:var(--glass);border:1.5px solid var(--border);padding:.85rem 1.6rem;border-radius:50px;text-decoration:none;font-weight:600}
+.hero-photo{flex:0 0 260px;width:260px;height:260px;border-radius:20px;overflow:hidden;border:1px solid var(--border);background:var(--glass)}
+.hero-photo img{width:100%;height:100%;object-fit:cover;display:block}
+section{padding:5rem 2rem;max-width:1100px;margin:0 auto}
+.eyebrow{color:var(--accent2);font-size:.8rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;margin-bottom:.5rem}
+section h2{font-size:2.1rem;font-weight:800;margin-bottom:2rem}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:1.5rem}
+.card{background:var(--glass);border:1px solid var(--border);border-radius:14px;padding:1.6rem;transition:.25s}
+.card:hover{border-color:var(--accent2);transform:translateY(-6px)}
+.card h3{color:var(--accent2);margin-bottom:.5rem;font-size:1.05rem}
+.card p{color:var(--text2);font-size:.88rem}
+.filters{display:flex;gap:.6rem;flex-wrap:wrap;margin-bottom:2rem}
+.filter-btn{background:var(--glass);border:1px solid var(--border);padding:.5rem 1.1rem;border-radius:50px;font-size:.82rem;color:var(--text2);cursor:pointer}
+.filter-btn.active{background:var(--accent);color:#fff;border-color:var(--accent)}
+.projects-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:1.8rem}
+.project{background:var(--glass);border:1px solid var(--border);border-radius:14px;overflow:hidden;transition:.25s}
+.project:hover{border-color:var(--accent2);transform:translateY(-6px)}
+.project img{width:100%;height:170px;object-fit:cover;display:block;background:var(--glass2)}
+.project-body{padding:1.2rem}
+.project-body h3{font-size:1rem;margin-bottom:.4rem}
+.project-body p{color:var(--text2);font-size:.85rem;margin-bottom:.7rem}
+.project-links{display:flex;gap:.8rem;margin-bottom:.6rem}
+.project-links a{color:var(--accent2);font-size:.8rem;text-decoration:none;font-weight:600}
+.tags{display:flex;flex-wrap:wrap;gap:.4rem}
+.tag{background:rgba(124,58,237,.2);color:var(--accent2);padding:.2rem .6rem;border-radius:20px;font-size:.68rem;font-weight:600}
+.edu-item{display:flex;gap:1.5rem;padding:1.2rem 0;border-bottom:1px solid var(--border)}
+.edu-year{color:var(--accent2);font-weight:700;flex:0 0 60px}
+.edu-item h3{font-size:1rem;margin-bottom:.2rem}
+.edu-item p{color:var(--text2);font-size:.85rem}
+.contact-form{max-width:560px}
+.form-group{margin-bottom:1.2rem}
+.form-group label{display:block;margin-bottom:.4rem;font-weight:600;font-size:.9rem}
+.form-group input,.form-group textarea{width:100%;padding:.85rem;background:var(--glass);border:1px solid var(--border);border-radius:10px;color:var(--text);font-family:inherit}
+.form-group textarea{min-height:120px;resize:vertical}
+.form-group input:focus,.form-group textarea:focus{outline:none;border-color:var(--accent2)}
+.socials{display:flex;gap:1rem;flex-wrap:wrap;margin-top:2rem}
+.social{width:46px;height:46px;border-radius:50%;background:var(--glass);border:1px solid var(--border);display:flex;align-items:center;justify-content:center;text-decoration:none;color:var(--accent2);font-size:1rem;font-weight:700;transition:.25s}
+.social:hover{background:var(--accent);color:#fff;transform:translateY(-4px)}
+footer{text-align:center;padding:2rem;color:var(--muted);border-top:1px solid var(--border);font-size:.82rem}
+.status{position:fixed;bottom:1.5rem;right:1.5rem;background:var(--accent);padding:.9rem 1.4rem;border-radius:10px;opacity:0;transition:.3s;z-index:200;font-size:.88rem}
+.status.show{opacity:1}
+@media(max-width:700px){nav{display:none}.hero{flex-direction:column;text-align:center}.hero-photo{margin:0 auto}.hero p{margin-left:auto;margin-right:auto}}
+</style>
+</head>
+<body>
+
+<header>
+<div class="header-content">
+<a class="logo" href="#hero">GB.</a>
+<nav>
+<a href="#skills">Skills</a>
+<a href="#proyectos">Proyectos</a>
+<a href="#educacion">Educación</a>
+<a href="#contacto">Contacto</a>
+</nav>
+<a class="cta" href="mailto:gisecreadoraweb@gmail.com">Contratar</a>
+</div>
+</header>
+
+<section class="hero" id="hero">
+<div class="hero-text">
+<span class="badge">● Disponible para proyectos</span>
+<h1>Hola, soy Gisella Bustamante</h1>
+<div class="sub">Web Developer · UI/UX · Diseño Web</div>
+<p>Construyo sitios modernos que dan vida a las ideas. Desde el código hasta el diseño, cada píxel tiene un propósito.</p>
+<div class="stack-pills">
+<span class="pill">HTML</span><span class="pill">CSS</span><span class="pill">JS</span><span class="pill">React</span><span class="pill">WordPress</span><span class="pill">Webflow</span>
+</div>
+<div class="btns">
+<a href="#proyectos" class="btn-p">Ver proyectos</a>
+<a href="#contacto" class="btn-s">Hablemos →</a>
+</div>
+</div>
+<div class="hero-photo">
+<img src="https://gvbustamante.github.io/portafolio/img/foto%20perfil.png" alt="Gisella Bustamante">
+</div>
+</section>
+
+<section id="skills">
+<div class="eyebrow">Expertise</div>
+<h2>Stack & Habilidades</h2>
+<div class="grid">
+<div class="card"><h3>💻 Código</h3><p>HTML5, CSS3, JavaScript, React.js, Node.js, MySQL, Bootstrap, Flutter</p></div>
+<div class="card"><h3>🧩 No-Code</h3><p>WordPress, Webflow, Shopify, Elementor</p></div>
+<div class="card"><h3>✦ Diseño</h3><p>UI/UX, Figma, Branding, Social Media, SEO</p></div>
+</div>
+</section>
+
+<section id="proyectos">
+<div class="eyebrow">Trabajo</div>
+<h2>Mis Proyectos</h2>
+<div class="filters">
+<button class="filter-btn active" data-cat="todos">Todos</button>
+<button class="filter-btn" data-cat="html">HTML & CSS</button>
+<button class="filter-btn" data-cat="nocode">No-Code</button>
+<button class="filter-btn" data-cat="social">Social & Brand</button>
+<button class="filter-btn" data-cat="apps">UI & Apps</button>
+<button class="filter-btn" data-cat="juegos">Juegos</button>
+</div>
+<div class="projects-grid" id="projectsGrid"></div>
+<div style="text-align:center;margin-top:2rem"><button class="btn-s" id="toggleBtn" style="border:none;cursor:pointer">Ver todos los proyectos</button></div>
+</section>
+
+<section id="invitaciones">
+<div class="eyebrow">Eterna Quince</div>
+<h2>Invitaciones Digitales</h2>
+<div class="grid">
+<div class="card"><h3>Isabella</h3><p>Cinema noir, dorado sobre oscuro.</p><div class="project-links" style="margin-top:.6rem"><a href="https://gvbustamante.github.io/isabella15/" target="_blank">Ver invitación ↗</a></div></div>
+<div class="card"><h3>Manuela</h3><p>"Pasaporte a mis 15" — tema viajes.</p><div class="project-links" style="margin-top:.6rem"><a href="https://gvbustamante.github.io/manuela15/" target="_blank">Ver invitación ↗</a></div></div>
+</div>
+</section>
+
+<section id="educacion">
+<div class="eyebrow">Formación</div>
+<h2>Mi Educación</h2>
+<div class="edu-item"><div class="edu-year">2023</div><div><h3>Ingeniería de Sistemas</h3><p>Fundación Universitaria San José</p></div></div>
+<div class="edu-item"><div class="edu-year">2023</div><div><h3>Front-End Developer</h3><p>Oracle Next Education (ONE)</p></div></div>
+<div class="edu-item"><div class="edu-year">2022</div><div><h3>Técnico en Sistemas de Software</h3><p>Fundación Caribbean Business (FEC)</p></div></div>
+<div class="edu-item"><div class="edu-year">2022</div><div><h3>Diplomado en Programación Java</h3><p>Politécnico Colombiano</p></div></div>
+<div class="edu-item"><div class="edu-year">2021</div><div><h3>Socióloga</h3><p>Universidad del Atlántico</p></div></div>
+</section>
+
+<section id="contacto">
+<div class="eyebrow">Contacto</div>
+<h2>¿Tienes un proyecto?</h2>
+<div class="contact-form">
+<form id="contactForm" action="https://formspree.io/f/xzdlyjaw" method="POST">
+<div class="form-group"><label>Nombre</label><input type="text" name="name" required placeholder="Tu nombre"></div>
+<div class="form-group"><label>Email</label><input type="email" name="email" required placeholder="tu@email.com"></div>
+<div class="form-group"><label>Mensaje</label><textarea name="message" required placeholder="Cuéntame tu idea..."></textarea></div>
+<button type="submit" class="btn-p" style="border:none;cursor:pointer;width:100%">Enviar mensaje →</button>
+</form>
+</div>
+<div class="socials">
+<a class="social" href="https://www.linkedin.com/in/gvbustamante/" target="_blank" title="LinkedIn">in</a>
+<a class="social" href="https://www.instagram.com/gise.co_" target="_blank" title="Instagram">IG</a>
+<a class="social" href="https://www.behance.net/gvbustamante" target="_blank" title="Behance">Be</a>
+<a class="social" href="https://github.com/gvbustamante" target="_blank" title="GitHub">GH</a>
+<a class="social" href="https://twitter.com/GisellaBM" target="_blank" title="Twitter/X">X</a>
+<a class="social" href="https://www.upwork.com/freelancers/~012a078726ac1d2a3f" target="_blank" title="Upwork">Up</a>
+<a class="social" href="mailto:gisecreadoraweb@gmail.com" title="Email">@</a>
+</div>
+</section>
+
+<footer>© 2026 Gisella Bustamante · Barranquilla, Colombia</footer>
+<div class="status" id="status"></div>
+
+<script>
+const IMG = "https://gvbustamante.github.io/portafolio/img/";
+const projects = [
+{img:"gobeapp.png",title:"Gobe App Technology",desc:"Plataforma empresarial completa — diseño y desarrollo.",tags:["HTML","CSS","JS"],cat:"html",link:"https://gobeapp.com/",linkLabel:"Ver sitio ↗"},
+{img:"fec_after.png",title:"FEC Website Redesign",desc:"Rediseño de institución educativa para mejorar UX.",tags:["HTML","CSS","Rediseño"],cat:"html",link:"https://gvbustamante.github.io/fec/",linkLabel:"Ver rediseño ↗"},
+{img:"gobeeducation.png",title:"Gobe Education",desc:"Plataforma educativa online accesible y moderna.",tags:["HTML","CSS","JS"],cat:"html",link:"https://gobeapp.com/Gobeeducation.html",linkLabel:"Ver sitio ↗"},
+{img:"farbeyond.png",title:"Far Beyond Learning",desc:"Plataforma de aprendizaje digital con diseño moderno.",tags:["HTML","CSS","JS"],cat:"html",link:"https://farbeyond.com.co/",linkLabel:"Ver sitio ↗"},
+{img:"jardinredesign.png",title:"Jardín Pequeños Tesoros",desc:"Rediseño de preescolar optimizado para accesibilidad.",tags:["HTML","CSS","Rediseño"],cat:"html",link:"",linkLabel:""},
+{img:"cocinasamedida.png",title:"Cocinas a Medida",desc:"Sitio web para negocio de cocinas y baños a medida.",tags:["Webflow","SEO"],cat:"nocode",link:"https://paloma-project-ii.webflow.io/",linkLabel:"Ver proyecto ↗"},
+{img:"websitepilot.png",title:"Pilot Academy Website",desc:"Academia de pilotos — diseño en Webflow.",tags:["Webflow","UI/UX"],cat:"nocode",link:"https://pilotsflaviationcenter.webflow.io/",linkLabel:"Ver proyecto ↗"},
+{img:"caroffroad.png",title:"Alquiler de Carros Offroad",desc:"Sitio WordPress para alquiler de vehículos todoterreno.",tags:["WordPress","Diseño"],cat:"nocode",link:"",linkLabel:""},
+{img:"gymweb.png",title:"Sitio Web para Gimnasio",desc:"Diseño y desarrollo WordPress para fitness.",tags:["WordPress","UI/UX"],cat:"nocode",link:"",linkLabel:""},
+{img:"shopify.png",title:"Tienda Online en Shopify",desc:"Ecommerce con experiencia de usuario intuitiva.",tags:["Shopify","Ecommerce"],cat:"nocode",link:"",linkLabel:""},
+{img:"marketing_courses.png",title:"Marketing Courses Website",desc:"Plataforma de cursos de marketing digital.",tags:["WordPress","Elementor"],cat:"nocode",link:"",linkLabel:""},
+{img:"instagram_designs.png",title:"Contenido para Instagram",desc:"Estrategias visuales para fitness, educación, belleza y negocios.",tags:["Diseño","Social Media"],cat:"social",link:"",linkLabel:""},
+{img:"social_fisioterapia.png",title:"Social Media — Fisioterapia",desc:"Estrategia de contenido y branding para profesional de salud.",tags:["Branding","Redes"],cat:"social",link:"",linkLabel:""},
+{img:"branding_pianist.png",title:"Branding — Academia de Piano",desc:"Rediseño de identidad corporativa, logo y material promocional.",tags:["Branding","Logo"],cat:"social",link:"",linkLabel:""},
+{img:"social_pequenostesoros.png",title:"Social Media — Jardín Infantil",desc:"Campaña digital para promoción de preescolar.",tags:["Social Media","Campaña"],cat:"social",link:"",linkLabel:""},
+{img:"flutterui.png",title:"Biblioteca de Libros Online",desc:"Interfaz móvil en Flutter para jóvenes amantes de la lectura.",tags:["Flutter","Mobile UI"],cat:"apps",link:"",linkLabel:""},
+{img:"alura.png",title:"Desencriptador de Texto",desc:"App web para encriptar y desencriptar mensajes — Alura.",tags:["HTML","CSS","JS"],cat:"apps",link:"https://gvbustamante.github.io/Encriptador-alura/",linkLabel:"Ver proyecto ↗"},
+{img:"sonic.png",title:"Juego de Cumpleaños Sonic",desc:"Juego interactivo con temática Sonic para invitación especial.",tags:["Scratch","Google Sites"],cat:"juegos",link:"https://sites.google.com/view/notinewsanti/invitaci%C3%B3n-sonic?authuser=0",linkLabel:"Ver proyecto ↗"},
+{img:"fightgame.png",title:"Juego de Pelea",desc:"Videojuego de lucha con personajes icónicos en Scratch.",tags:["Scratch","Google Sites"],cat:"juegos",link:"https://sites.google.com/view/notinewsanti/video-game?authuser=0",linkLabel:"Ver proyecto ↗"}
+];
+
+let showAll=false;
+function renderProjects(cat){
+const grid=document.getElementById('projectsGrid');
+grid.innerHTML='';
+let list=projects.filter(p=>cat==='todos'||p.cat===cat);
+const total=list.length;
+if(!showAll)list=list.slice(0,6);
+list.forEach(p=>{
+const el=document.createElement('div');
+el.className='project';
+el.innerHTML=`
+<img src="${IMG}${p.img}" alt="${p.title}" loading="lazy">
+<div class="project-body">
+<h3>${p.title}</h3>
+<p>${p.desc}</p>
+${p.link?`<div class="project-links"><a href="${p.link}" target="_blank">${p.linkLabel}</a></div>`:''}
+<div class="tags">${p.tags.map(t=>`<span class="tag">${t}</span>`).join('')}</div>
+</div>`;
+grid.appendChild(el);
+});
+const btn=document.getElementById('toggleBtn');
+btn.style.display=total>6?'inline-block':'none';
+btn.textContent=showAll?'Ver menos':'Ver todos los proyectos';
+}
+renderProjects('todos');
+document.getElementById('toggleBtn').addEventListener('click',()=>{
+showAll=!showAll;
+renderProjects(document.querySelector('.filter-btn.active').dataset.cat);
+});
+
+document.querySelectorAll('.filter-btn').forEach(btn=>{
+btn.addEventListener('click',()=>{
+document.querySelectorAll('.filter-btn').forEach(b=>b.classList.remove('active'));
+btn.classList.add('active');
+showAll=false;
+renderProjects(btn.dataset.cat);
+});
+});
+
+document.querySelectorAll('a[href^="#"]').forEach(a=>{
+a.addEventListener('click',e=>{
+e.preventDefault();
+document.querySelector(a.getAttribute('href'))?.scrollIntoView({behavior:'smooth'});
+});
+});
+
+const form=document.getElementById('contactForm');
+const status=document.getElementById('status');
+form.addEventListener('submit',async e=>{
+e.preventDefault();
+try{
+const res=await fetch(form.action,{method:'POST',body:new FormData(form),headers:{'Accept':'application/json'}});
+if(res.ok){
+status.textContent='✓ Mensaje enviado. Te contactaré pronto.';
+form.reset();
+}else{
+status.textContent='✗ Error al enviar. Intenta de nuevo.';
+}
+}catch(err){
+status.textContent='✗ Sin conexión. Intenta de nuevo.';
+}
+status.classList.add('show');
+setTimeout(()=>status.classList.remove('show'),4000);
+});
+</script>
+</body>
+</html>
