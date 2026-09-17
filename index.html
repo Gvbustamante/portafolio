@@ -4,9 +4,9 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Gisella Bustamante — Desarrolladora & Creadora</title>
-<meta name="description" content="Creo sitios web, invitaciones digitales con Dear Guest y soy creadora de KidsMin. Codigo y alma en cada proyecto.">
-<meta property="og:title" content="Gisella Bustamante — Codigo, diseno y alma">
-<meta property="og:description" content="Desarrollo web, invitaciones digitales y productos con proposito.">
+<meta name="description" content="Creo sitios web y soy creadora de KidsMin. Código y alma en cada proyecto.">
+<meta property="og:title" content="Gisella Bustamante — Código, diseño y alma">
+<meta property="og:description" content="Desarrollo web, invitaciones digitales y productos con propósito.">
 <meta property="og:image" content="https://gvbustamante.github.io/portafolio/img/foto%20perfil.png">
 <meta property="og:type" content="website">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -163,9 +163,15 @@ nav{display:flex;align-items:center;justify-content:space-between;padding:16px 2
 .mock-tropicana .mock-laptop{background:linear-gradient(135deg,#fb923c,#f472b6);}
 .mock-tropicana .mock-phone{background:linear-gradient(160deg,#f97316,#ec4899);}
 .mock-tropicana{background:linear-gradient(180deg,#fef0ec,#fde8e0);}
-.mock-dearguest .mock-laptop{background:linear-gradient(135deg,#e8a0bf,#b07cc2,#6e4ff0);}
-.mock-dearguest .mock-phone{background:linear-gradient(160deg,#d88fae,#9b6bb5);}
-.mock-dearguest{background:linear-gradient(180deg,#f8eef4,#f0e4ee);}
+.mock-cocina .mock-laptop{background:linear-gradient(135deg,#78350f,#a16207,#d97706);}
+.mock-cocina .mock-phone{background:linear-gradient(160deg,#92400e,#ca8a04);}
+.mock-cocina{background:linear-gradient(180deg,#fef9ee,#fdf3dc);}
+.mock-pilot .mock-laptop{background:linear-gradient(135deg,#0c4a6e,#0284c7,#38bdf8);}
+.mock-pilot .mock-phone{background:linear-gradient(160deg,#0369a1,#7dd3fc);}
+.mock-pilot{background:linear-gradient(180deg,#ecf6fd,#dbeef9);}
+.mock-flutter .mock-laptop{background:linear-gradient(135deg,#0d47a1,#42a5f5,#29b6f6);}
+.mock-flutter .mock-phone{background:linear-gradient(160deg,#1565c0,#4fc3f7);}
+.mock-flutter{background:linear-gradient(180deg,#e8f4fd,#d6ecf8);}
 .mock-kidsmin .mock-laptop{background:linear-gradient(135deg,#60a5fa,#a78bfa,#f472b6);}
 .mock-kidsmin .mock-phone{background:linear-gradient(160deg,#818cf8,#c084fc);}
 .mock-kidsmin{background:linear-gradient(180deg,#eef0fa,#e4e0f6);}
@@ -196,20 +202,6 @@ nav{display:flex;align-items:center;justify-content:space-between;padding:16px 2
 .km-phone-label{font-family:'Space Grotesk';font-weight:700;font-size:11px;color:rgba(255,255,255,.8);}
 .km-donate{display:inline-flex;align-items:center;gap:6px;margin-top:8px;font-size:13px;color:#92400e;border:1px solid rgba(251,191,36,.4);padding:8px 16px;border-radius:100px;transition:.2s;}
 .km-donate:hover{background:rgba(251,191,36,.15);transform:translateY(-2px);}
-
-/* Dear Guest */
-.dg-section{background:var(--rose-light);border-top:1px solid rgba(232,160,191,.2);border-bottom:1px solid rgba(232,160,191,.2);position:relative;overflow:hidden;}
-.dg-grid{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:center;}
-@media(max-width:820px){.dg-grid{grid-template-columns:1fr;}}
-.dg-text p{color:var(--text-secondary);font-size:15px;margin-bottom:14px;}
-.dg-text p b{color:var(--text);font-weight:600;}
-.dg-features{display:grid;grid-template-columns:1fr 1fr;gap:12px;}
-@media(max-width:480px){.dg-features{grid-template-columns:1fr;}}
-.dg-feat{background:rgba(255,255,255,.7);border:1px solid rgba(232,160,191,.2);border-radius:16px;padding:20px;transition:transform .25s,border-color .25s;}
-.dg-feat:hover{transform:translateY(-3px);border-color:var(--rose);}
-.dg-feat-icon{font-size:22px;margin-bottom:8px;display:block;}
-.dg-feat h4{font-size:14px;font-weight:600;margin-bottom:3px;}
-.dg-feat p{font-size:12px;color:var(--text-secondary);margin:0;}
 
 /* tools */
 .tools-section{background:var(--bg);}
@@ -308,20 +300,18 @@ footer{background:var(--bg-dark);color:#fff;padding-top:80px;}
   <nav>
     <a href="#hero" class="logo"><span class="logo-icon">G</span> GISELLA.</a>
     <div class="nav-links">
-      <a href="#about">Sobre mi</a>
+      <a href="#about">Sobre mí</a>
       <a href="#kidsmin">KidsMin</a>
-      <a href="#dear-guest">Dear Guest</a>
       <a href="#works">Proyectos</a>
       <a href="#skills">Skills</a>
       <a href="#contact">Contactar</a>
     </div>
     <a href="#contact" class="nav-cta">Hablemos</a>
-    <button class="burger" id="burgerBtn" aria-label="Abrir menu" aria-expanded="false">&#9776;</button>
+    <button class="burger" id="burgerBtn" aria-label="Abrir menú" aria-expanded="false">&#9776;</button>
   </nav>
   <div class="mobile-menu" id="mobileMenu">
-    <a href="#about">Sobre mi</a>
+    <a href="#about">Sobre mí</a>
     <a href="#kidsmin">KidsMin</a>
-    <a href="#dear-guest">Dear Guest</a>
     <a href="#works">Proyectos</a>
     <a href="#skills">Skills</a>
     <a href="#tools">Herramientas</a>
@@ -334,7 +324,7 @@ footer{background:var(--bg-dark);color:#fff;padding-top:80px;}
   <div class="wrap hero-grid">
     <div class="reveal show">
       <h1>CODING WITH<br><span class="outline">PASSION,</span> CREATING<br>WITH PURPOSE</h1>
-      <p class="hero-sub">Soy Gisella. Hago sitios web, invitaciones digitales y productos que nacen del corazon. Si tiene proposito, lo construyo.</p>
+      <p class="hero-sub">Soy Gisella. Hago sitios web, invitaciones digitales y productos que nacen del corazón. Si tiene propósito, lo construyo.</p>
       <div class="btn-row">
         <a href="#works" class="btn btn-primary">Ver proyectos &#8599;</a>
         <a href="#contact" class="btn btn-outline">Hablemos &rarr;</a>
@@ -356,8 +346,8 @@ footer{background:var(--bg-dark);color:#fff;padding-top:80px;}
         <div><strong>Frontend Dev</strong><span>React &middot; JS &middot; CSS</span></div>
       </div>
       <div class="float-badge badge-2">
-        <div class="ic" style="background:var(--rose)"></div>
-        <div><strong>Dear Guest</strong><span>Invitaciones Digitales</span></div>
+        <div class="ic" style="background:var(--purple)"></div>
+        <div><strong>Webflow</strong><span>Diseño & No-Code</span></div>
       </div>
     </div>
   </div>
@@ -367,7 +357,7 @@ footer{background:var(--bg-dark);color:#fff;padding-top:80px;}
 <section id="about" class="about-section">
   <div class="wrap">
     <div class="about-text reveal">
-      <p>Hola! Soy Gisella, socióloga y desarrolladora web con <span class="highlight">+4 AÑOS DE EXPERIENCIA</span> en el campo. Transformo ideas en realidades digitales, buscando siempre formas innovadoras de unir diseño y tecnología. Tengo una base solida en <span class="highlight">FRONT-END</span> y <span class="highlight">BACK-END</span>, con buen ojo para el diseño responsivo e interfaces centradas en las personas.</p>
+      <p>¡Hola! Soy Gisella, socióloga y desarrolladora web con <span class="highlight">+4 AÑOS DE EXPERIENCIA</span> en el campo. Transformo ideas en realidades digitales, buscando siempre formas innovadoras de unir diseño y tecnología. Tengo una base sólida en <span class="highlight">FRONT-END</span> y <span class="highlight">BACK-END</span>, con buen ojo para el diseño responsivo e interfaces centradas en las personas.</p>
     </div>
   </div>
 </section>
@@ -382,13 +372,13 @@ footer{background:var(--bg-dark);color:#fff;padding-top:80px;}
       <div class="skill-card reveal">
         <div class="skill-icons">&lt;/&gt;</div>
         <h4>Front-end Development</h4>
-        <p>React, Next.js, HTML, CSS, JS. Sitios rapidos que convierten.</p>
+        <p>React, Next.js, HTML, CSS, JS. Sitios rápidos que convierten.</p>
         <div class="skill-bar"><div class="skill-fill" style="width:92%"></div></div>
       </div>
       <div class="skill-card reveal">
         <div class="skill-icons">{&nbsp;}</div>
         <h4>Back-end Development</h4>
-        <p>Node.js, Supabase, MySQL. APIs solidas y bases de datos bien pensadas.</p>
+        <p>Node.js, Supabase, MySQL. APIs sólidas y bases de datos bien pensadas.</p>
         <div class="skill-bar"><div class="skill-fill" style="width:82%"></div></div>
       </div>
       <div class="skill-card reveal">
@@ -400,19 +390,19 @@ footer{background:var(--bg-dark);color:#fff;padding-top:80px;}
       <div class="skill-card reveal">
         <div class="skill-icons">&#10094;&#10095;</div>
         <h4>Version Control</h4>
-        <p>Git y GitHub. Codigo organizado, siempre con historial.</p>
+        <p>Git y GitHub. Código organizado, siempre con historial.</p>
         <div class="skill-bar"><div class="skill-fill" style="width:88%"></div></div>
       </div>
       <div class="skill-card reveal">
         <div class="skill-icons">&#9712;</div>
         <h4>Responsive Design</h4>
-        <p>Disenos que se ven perfecto en cualquier dispositivo.</p>
+        <p>Diseños que se ven perfecto en cualquier dispositivo.</p>
         <div class="skill-bar"><div class="skill-fill" style="width:94%"></div></div>
       </div>
       <div class="skill-card reveal">
         <div class="skill-icons">&#9733;</div>
         <h4>UI/UX Design</h4>
-        <p>Interfaces claras en Figma. Pienso en quien las va a usar.</p>
+        <p>Interfaces claras en Figma. Pienso en quién las va a usar.</p>
         <div class="skill-bar"><div class="skill-fill" style="width:88%"></div></div>
       </div>
     </div>
@@ -435,21 +425,46 @@ footer{background:var(--bg-dark);color:#fff;padding-top:80px;}
         <div class="proj-body">
           <span class="proj-tag">React</span><span class="proj-tag">Supabase</span><span class="proj-tag" style="background:var(--warm-light);color:#92400e;">Producto propio</span>
           <h3>KidsMin <a href="https://iglesiasharat.vercel.app/#/bienvenida" target="_blank">&#8599;</a></h3>
-          <p>Plataforma para ministerios infantiles. Mi creacion.</p>
+          <p>Plataforma para ministerios infantiles. Mi creación.</p>
           <a href="https://iglesiasharat.vercel.app/#/bienvenida" target="_blank" class="view-link">View Project &#8594;</a>
         </div>
       </div>
 
       <div class="proj-card reveal">
-        <div class="mockup-wrap mock-dearguest">
-          <div class="mock-laptop"><span class="mock-label">Dear Guest</span></div>
+        <div class="mockup-wrap mock-cocina">
+          <div class="mock-laptop"><span class="mock-label">Cocinas a Medida</span></div>
           <div class="mock-phone"></div>
         </div>
         <div class="proj-body">
-          <span class="proj-tag">React</span><span class="proj-tag">Supabase</span><span class="proj-tag" style="background:var(--rose-light);color:#9d174d;">Producto propio</span>
-          <h3>Dear Guest <a href="https://dear-guest.netlify.app/" target="_blank">&#8599;</a></h3>
-          <p>Invitaciones digitales con alma.</p>
-          <a href="https://dear-guest.netlify.app/" target="_blank" class="view-link">View Project &#8594;</a>
+          <span class="proj-tag">Webflow</span><span class="proj-tag">SEO</span>
+          <h3>Cocinas a Medida <a href="https://paloma-project-ii.webflow.io/" target="_blank">&#8599;</a></h3>
+          <p>Sitio web para negocio de cocinas y baños a medida.</p>
+          <a href="https://paloma-project-ii.webflow.io/" target="_blank" class="view-link">View Project &#8594;</a>
+        </div>
+      </div>
+
+      <div class="proj-card reveal">
+        <div class="mockup-wrap mock-pilot">
+          <div class="mock-laptop"><span class="mock-label">Pilot Academy</span></div>
+          <div class="mock-phone"></div>
+        </div>
+        <div class="proj-body">
+          <span class="proj-tag">Webflow</span><span class="proj-tag">UI/UX</span>
+          <h3>Pilot Academy <a href="https://pilotsflaviationcenter.webflow.io/" target="_blank">&#8599;</a></h3>
+          <p>Academia de pilotos — diseño claro y profesional.</p>
+          <a href="https://pilotsflaviationcenter.webflow.io/" target="_blank" class="view-link">View Project &#8594;</a>
+        </div>
+      </div>
+
+      <div class="proj-card reveal">
+        <div class="mockup-wrap mock-flutter">
+          <div class="mock-laptop"><span class="mock-label">Biblioteca de Libros</span></div>
+          <div class="mock-phone"></div>
+        </div>
+        <div class="proj-body">
+          <span class="proj-tag">Flutter</span><span class="proj-tag">Mobile UI</span>
+          <h3>Biblioteca de Libros Online</h3>
+          <p>Interfaz móvil en Flutter para jóvenes amantes de la lectura.</p>
         </div>
       </div>
 
@@ -461,7 +476,7 @@ footer{background:var(--bg-dark);color:#fff;padding-top:80px;}
         <div class="proj-body">
           <span class="proj-tag">React</span><span class="proj-tag">Supabase</span>
           <h3>Essenza Spa <a href="https://essenza-psi.vercel.app/" target="_blank">&#8599;</a></h3>
-          <p>Sitio elegante para spa. Diseno y desarrollo completo.</p>
+          <p>Sitio elegante para spa. Diseño y desarrollo completo.</p>
           <a href="https://essenza-psi.vercel.app/" target="_blank" class="view-link">View Project &#8594;</a>
         </div>
       </div>
@@ -487,7 +502,7 @@ footer{background:var(--bg-dark);color:#fff;padding-top:80px;}
         <div class="proj-body">
           <span class="proj-tag">React</span>
           <h3>OneTap Scan <a href="https://onetap-scan.netlify.app/" target="_blank">&#8599;</a></h3>
-          <p>Escaneo y generacion de codigos QR, rapido y simple.</p>
+          <p>Escaneo y generación de códigos QR, rápido y simple.</p>
           <a href="https://onetap-scan.netlify.app/" target="_blank" class="view-link">View Project &#8594;</a>
         </div>
       </div>
@@ -513,7 +528,7 @@ footer{background:var(--bg-dark);color:#fff;padding-top:80px;}
         <div class="proj-body">
           <span class="proj-tag">HTML</span><span class="proj-tag">CSS</span>
           <h3>Tropicana Gelato <a href="https://tropicana-gelato-cafe.netlify.app/" target="_blank">&#8599;</a></h3>
-          <p>Heladeria artesanal con diseno fresco y apetitoso.</p>
+          <p>Heladería artesanal con diseño fresco y apetitoso.</p>
           <a href="https://tropicana-gelato-cafe.netlify.app/" target="_blank" class="view-link">View Project &#8594;</a>
         </div>
       </div>
@@ -527,14 +542,14 @@ footer{background:var(--bg-dark);color:#fff;padding-top:80px;}
   <div class="wrap">
     <div class="km-grid">
       <div class="km-text reveal">
-        <div class="eyebrow eyebrow-warm">Mi creacion</div>
+        <div class="eyebrow eyebrow-warm">Mi creación</div>
         <h2 class="sec-title-xl">KidsMin</h2>
-        <p>Esto lo hice con el corazon. <b>KidsMin</b> es una plataforma que cree para iglesias que trabajan con ninos. Nacio de ver una necesidad real y querer resolverla con tecnologia.</p>
-        <p>Registro de asistencia, gestion de clases, seguimiento de cada nino. Todo pensado para que los lideres se enfoquen en lo que importa: <b>las personas</b>.</p>
-        <p>Es mi proyecto mas personal. Lo construi desde cero, lo sigo mejorando y lo comparto con quien lo necesite.</p>
+        <p>Esto lo hice con el corazón. <b>KidsMin</b> es una plataforma que creé para iglesias que trabajan con niños. Nació de ver una necesidad real y querer resolverla con tecnología.</p>
+        <p>Registro de asistencia, gestión de clases, seguimiento de cada niño. Todo pensado para que los líderes se enfoquen en lo que importa: <b>las personas</b>.</p>
+        <p>Es mi proyecto más personal. Lo construí desde cero, lo sigo mejorando y lo comparto con quien lo necesite.</p>
         <div style="display:flex;gap:10px;flex-wrap:wrap;margin-top:20px;">
           <a href="https://iglesiasharat.vercel.app/#/bienvenida" target="_blank" class="btn btn-warm">Conocer KidsMin &#8599;</a>
-          <a href="#contact" class="km-donate">&#9829; Apoyar con donacion</a>
+          <a href="#contact" class="km-donate">&#9829; Apoyar con donación</a>
         </div>
       </div>
       <div class="km-visual reveal">
@@ -547,42 +562,17 @@ footer{background:var(--bg-dark);color:#fff;padding-top:80px;}
   </div>
 </section>
 
-<!-- DEAR GUEST -->
-<section id="dear-guest" class="dg-section">
-  <div class="wrap">
-    <div class="dg-grid">
-      <div class="dg-text reveal">
-        <div class="eyebrow eyebrow-rose">Dear Guest</div>
-        <h2 class="sec-title-xl">Invitaciones que emocionan</h2>
-        <p>Cada celebracion merece una primera impresion bonita. Con <b>Dear Guest</b> diseno invitaciones digitales para bodas, cumpleanos, baby showers y todo evento que merezca ser anunciado con cuidado.</p>
-        <p>No son plantillas. Cada diseno nace de tu historia y tu estilo. La invitacion es la puerta de entrada a tu evento, y esa puerta tiene que ser <b>inolvidable</b>.</p>
-        <div style="margin-top:20px;display:flex;gap:10px;flex-wrap:wrap;">
-          <a href="https://dear-guest.netlify.app/" target="_blank" class="btn btn-rose">Ver Dear Guest &#8599;</a>
-          <a href="#contact" class="btn btn-outline" style="border-color:rgba(232,160,191,.3);color:var(--text);">Pide la tuya &rarr;</a>
-        </div>
-      </div>
-      <div class="reveal">
-        <div class="dg-features">
-          <div class="dg-feat"><span class="dg-feat-icon">&#9998;</span><h4>A tu medida</h4><p>Tu estilo, tus colores, tu historia.</p></div>
-          <div class="dg-feat"><span class="dg-feat-icon">&#10024;</span><h4>Animadas</h4><p>Detalles que hacen magia.</p></div>
-          <div class="dg-feat"><span class="dg-feat-icon">&#128241;</span><h4>100% digital</h4><p>WhatsApp, redes o email.</p></div>
-          <div class="dg-feat"><span class="dg-feat-icon">&#128149;</span><h4>Con alma</h4><p>Cada detalle pensado para emocionar.</p></div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
 
 <!-- PROCESO -->
 <section id="process" class="process-section">
   <div class="wrap">
     <div class="sec-head reveal">
-      <div class="eyebrow eyebrow-purple">Como trabajo</div>
+      <div class="eyebrow eyebrow-purple">Cómo trabajo</div>
       <h2 class="sec-title-xl">Simple y sin vueltas</h2>
     </div>
     <div class="process-row">
-      <div class="proc-card reveal"><div class="proc-num">01</div><h4>Escucho</h4><p>Entiendo tu idea, tu negocio y a quien le hablas.</p></div>
-      <div class="proc-card reveal"><div class="proc-num">02</div><h4>Diseno</h4><p>Propongo algo claro, bonito y coherente con tu marca.</p></div>
+      <div class="proc-card reveal"><div class="proc-num">01</div><h4>Escucho</h4><p>Entiendo tu idea, tu negocio y a quién le hablas.</p></div>
+      <div class="proc-card reveal"><div class="proc-num">02</div><h4>Diseño</h4><p>Propongo algo claro, bonito y coherente con tu marca.</p></div>
       <div class="proc-card reveal"><div class="proc-num">03</div><h4>Construyo</h4><p>Lo hago funcional, responsivo y con detalle.</p></div>
       <div class="proc-card reveal"><div class="proc-num">04</div><h4>Entrego</h4><p>Publico, pruebo y te lo dejo listo.</p></div>
     </div>
@@ -594,7 +584,7 @@ footer{background:var(--bg-dark);color:#fff;padding-top:80px;}
   <div class="wrap">
     <div class="sec-head reveal">
       <div class="eyebrow eyebrow-purple">Stack</div>
-      <h2 class="sec-title-xl">Con que trabajo</h2>
+      <h2 class="sec-title-xl">Con qué trabajo</h2>
     </div>
     <div class="tools-wrap">
       <div class="tool-card reveal">
@@ -609,7 +599,7 @@ footer{background:var(--bg-dark);color:#fff;padding-top:80px;}
         </div>
       </div>
       <div class="tool-card reveal">
-        <h5>Diseno & IA</h5>
+        <h5>Diseño & IA</h5>
         <div class="tools-pills">
           <span class="tool-pill"><span class="td" style="background:var(--rose)"></span>Figma</span>
           <span class="tool-pill"><span class="td" style="background:var(--rose)"></span>Canva</span>
@@ -619,7 +609,7 @@ footer{background:var(--bg-dark);color:#fff;padding-top:80px;}
         </div>
       </div>
       <div class="tool-card reveal">
-        <h5>Automatizacion</h5>
+        <h5>Automatización</h5>
         <div class="tools-pills">
           <span class="tool-pill"><span class="td" style="background:var(--warm)"></span>Make</span>
           <span class="tool-pill"><span class="td" style="background:var(--warm)"></span>Zapier</span>
@@ -640,19 +630,19 @@ footer{background:var(--bg-dark);color:#fff;padding-top:80px;}
   </div>
 </section>
 
-<!-- FORMACION -->
+<!-- FORMACIÓN -->
 <section id="education" class="process-section">
   <div class="wrap">
     <div class="sec-head reveal">
-      <div class="eyebrow eyebrow-purple">Formacion</div>
+      <div class="eyebrow eyebrow-purple">Formación</div>
       <h2 class="sec-title-xl">Lo que me respalda</h2>
     </div>
     <div class="edu-grid">
-      <div class="edu-card reveal"><h4>Sociologia</h4><p>Universidad del Atlantico &middot; 2025</p></div>
-      <div class="edu-card reveal"><h4>Ingenieria de Sistemas</h4><p>Fundacion Universitaria San Jose &middot; 2023</p></div>
+      <div class="edu-card reveal"><h4>Sociología</h4><p>Universidad del Atlántico &middot; 2025</p></div>
+      <div class="edu-card reveal"><h4>Ingeniería de Sistemas</h4><p>Fundación Universitaria San José &middot; 2023</p></div>
       <div class="edu-card reveal"><h4>Front-End Developer</h4><p>Oracle Next Education (ONE) &middot; 2023</p></div>
-      <div class="edu-card reveal"><h4>Tecnico en Software</h4><p>Caribbean Business (FEC) &middot; 2022</p></div>
-      <div class="edu-card reveal"><h4>Diplomado Java</h4><p>Politecnico Colombiano &middot; 2022</p></div>
+      <div class="edu-card reveal"><h4>Técnico en Software</h4><p>Caribbean Business (FEC) &middot; 2022</p></div>
+      <div class="edu-card reveal"><h4>Diplomado Java</h4><p>Politécnico Colombiano &middot; 2022</p></div>
     </div>
   </div>
 </section>
@@ -665,15 +655,15 @@ footer{background:var(--bg-dark);color:#fff;padding-top:80px;}
     </div>
     <div class="testi-grid">
       <div class="testi-card reveal">
-        <p>"Nos ayudo con Essenza desde cero: identidad, web y todo lo digital. Entendio exactamente lo que queriamos."</p>
+        <p>"Nos ayudó con Essenza desde cero: identidad, web y todo lo digital. Entendió exactamente lo que queríamos."</p>
         <div class="testi-who"><div class="av">E</div><div><strong>Erika Mercado</strong><span>Essenza Spa</span></div></div>
       </div>
       <div class="testi-card reveal">
-        <p>"Necesitaba un portafolio profesional. El resultado fue claro, ordenado y facil de compartir."</p>
+        <p>"Necesitaba un portafolio profesional. El resultado fue claro, ordenado y fácil de compartir."</p>
         <div class="testi-who"><div class="av">S</div><div><strong>Sofia Romero</strong><span>Ejecutiva Comercial</span></div></div>
       </div>
       <div class="testi-card reveal">
-        <p>"Me ayudo a construir mi presencia como profesor de piano online. Atenta a cada detalle."</p>
+        <p>"Me ayudó a construir mi presencia como profesor de piano online. Atenta a cada detalle."</p>
         <div class="testi-who"><div class="av">F</div><div><strong>Fuad Jassir</strong><span>jassirmusic.com.co</span></div></div>
       </div>
     </div>
@@ -686,7 +676,7 @@ footer{background:var(--bg-dark);color:#fff;padding-top:80px;}
       <div class="stats-row">
         <div class="stat"><h3>50+</h3><span>Proyectos</span></div>
         <div class="stat"><h3>15+</h3><span>Clientes</span></div>
-        <div class="stat"><h3>4+</h3><span>Anos</span></div>
+        <div class="stat"><h3>4+</h3><span>Años</span></div>
       </div>
     </div>
   </div>
@@ -696,7 +686,7 @@ footer{background:var(--bg-dark);color:#fff;padding-top:80px;}
 <footer id="contact">
   <div class="wrap">
     <h2 class="cta-title reveal show">LET'S WORK<br>T<span class="outline">O</span>GETHER</h2>
-    <p style="color:rgba(255,255,255,.5);max-width:440px;font-size:14.5px;">Sitio web, invitacion digital o branding. Cuentame y te respondo rapido.</p>
+    <p style="color:rgba(255,255,255,.5);max-width:440px;font-size:14.5px;">Sitio web, invitación digital o branding. Cuéntame y te respondo rápido.</p>
 
     <div class="contact-grid">
       <form class="contact-form reveal" id="contactForm" action="https://formspree.io/f/xzdlyjaw" method="POST">
@@ -710,7 +700,7 @@ footer{background:var(--bg-dark);color:#fff;padding-top:80px;}
         </div>
         <div class="form-group">
           <label for="message">Tu proyecto</label>
-          <textarea id="message" name="message" placeholder="Que necesitas y para cuando..." required></textarea>
+          <textarea id="message" name="message" placeholder="Qué necesitas y para cuándo..." required></textarea>
         </div>
         <button type="submit" class="btn btn-primary form-submit">Enviar &rarr;</button>
         <p class="form-note">Respondo en menos de 24h.</p>
@@ -718,11 +708,10 @@ footer{background:var(--bg-dark);color:#fff;padding-top:80px;}
       </form>
 
       <div class="contact-side reveal">
-        <p>Tambien puedes escribirme directo por redes o revisar mi trabajo.</p>
+        <p>También puedes escribirme directo por redes o revisar mi trabajo.</p>
         <div class="foot-links">
           <h5>Ir a</h5>
           <a href="#kidsmin">KidsMin</a>
-          <a href="#dear-guest">Dear Guest</a>
           <a href="#works">Proyectos</a>
           <a href="#skills">Skills</a>
         </div>
@@ -767,9 +756,9 @@ form.addEventListener('submit',async e=>{
   btn.disabled=true;btn.textContent='Enviando...';
   try{
     const res=await fetch(form.action,{method:'POST',body:new FormData(form),headers:{'Accept':'application/json'}});
-    if(res.ok){status.textContent='Enviado! Te respondo pronto.';status.className='form-status ok';form.reset();}
-    else{status.textContent='Error. Intenta de nuevo o escribeme por Instagram.';status.className='form-status err';}
-  }catch(err){status.textContent='Sin conexion. Intenta de nuevo.';status.className='form-status err';}
+    if(res.ok){status.textContent='¡Enviado! Te respondo pronto.';status.className='form-status ok';form.reset();}
+    else{status.textContent='Error. Intenta de nuevo o escríbeme por Instagram.';status.className='form-status err';}
+  }catch(err){status.textContent='Sin conexión. Intenta de nuevo.';status.className='form-status err';}
   btn.disabled=false;btn.textContent='Enviar →';
 });
 </script>
