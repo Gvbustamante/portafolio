@@ -148,12 +148,6 @@ nav{display:flex;align-items:center;justify-content:space-between;padding:16px 2
 .mock-phone{position:absolute;bottom:12px;right:18px;width:16%;aspect-ratio:9/19;border-radius:10px;border:2px solid rgba(255,255,255,.18);overflow:hidden;box-shadow:0 6px 20px rgba(0,0,0,.3);}
 @media(max-width:640px){.mockup-wrap{padding:16px;}.mock-phone{right:12px;bottom:10px;border-radius:7px;}}
 
-.mock-essenza .mock-laptop{background:linear-gradient(135deg,#d4a5c7,#9b7ea6);}
-.mock-essenza .mock-phone{background:linear-gradient(160deg,#c999bc,#8a6e95);}
-.mock-essenza{background:linear-gradient(180deg,#f3eaf0,#e8dce5);}
-.mock-jassir .mock-laptop{background:linear-gradient(135deg,#1e1b4b,#4338ca,#6366f1);}
-.mock-jassir .mock-phone{background:linear-gradient(160deg,#312e81,#5b54d4);}
-.mock-jassir{background:linear-gradient(180deg,#eeedf8,#dddaf2);}
 .mock-onetap .mock-laptop{background:linear-gradient(135deg,#166534,#22c55e,#4ade80);}
 .mock-onetap .mock-phone{background:linear-gradient(160deg,#15803d,#34d399);}
 .mock-onetap{background:linear-gradient(180deg,#ecf9f0,#ddf4e4);}
@@ -163,20 +157,11 @@ nav{display:flex;align-items:center;justify-content:space-between;padding:16px 2
 .mock-tropicana .mock-laptop{background:linear-gradient(135deg,#fb923c,#f472b6);}
 .mock-tropicana .mock-phone{background:linear-gradient(160deg,#f97316,#ec4899);}
 .mock-tropicana{background:linear-gradient(180deg,#fef0ec,#fde8e0);}
-.mock-cocina .mock-laptop{background:linear-gradient(135deg,#78350f,#a16207,#d97706);}
-.mock-cocina .mock-phone{background:linear-gradient(160deg,#92400e,#ca8a04);}
-.mock-cocina{background:linear-gradient(180deg,#fef9ee,#fdf3dc);}
-.mock-pilot .mock-laptop{background:linear-gradient(135deg,#0c4a6e,#0284c7,#38bdf8);}
-.mock-pilot .mock-phone{background:linear-gradient(160deg,#0369a1,#7dd3fc);}
-.mock-pilot{background:linear-gradient(180deg,#ecf6fd,#dbeef9);}
-.mock-flutter .mock-laptop{background:linear-gradient(135deg,#0d47a1,#42a5f5,#29b6f6);}
-.mock-flutter .mock-phone{background:linear-gradient(160deg,#1565c0,#4fc3f7);}
-.mock-flutter{background:linear-gradient(180deg,#e8f4fd,#d6ecf8);}
-.mock-kidsmin .mock-laptop{background:linear-gradient(135deg,#60a5fa,#a78bfa,#f472b6);}
-.mock-kidsmin .mock-phone{background:linear-gradient(160deg,#818cf8,#c084fc);}
-.mock-kidsmin{background:linear-gradient(180deg,#eef0fa,#e4e0f6);}
 
 .mock-label{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;font-family:'Space Grotesk';font-weight:700;font-size:14px;color:rgba(255,255,255,.75);text-align:center;padding:4px;pointer-events:none;}
+.mock-laptop img,.mock-phone img{width:100%;height:100%;object-fit:cover;display:block;}
+.proj-thumb{width:100%;aspect-ratio:16/10;overflow:hidden;}
+.proj-thumb img{width:100%;height:100%;object-fit:cover;display:block;}
 
 .proj-body{padding:18px 20px 20px;}
 .proj-body h3{font-size:16px;margin-bottom:4px;font-weight:700;display:flex;align-items:center;gap:8px;}
@@ -196,7 +181,8 @@ nav{display:flex;align-items:center;justify-content:space-between;padding:16px 2
 .km-visual{display:flex;justify-content:center;}
 .km-mockup{position:relative;width:100%;max-width:420px;}
 .km-laptop{width:100%;aspect-ratio:16/10;border-radius:12px;border:3px solid rgba(251,191,36,.3);background:linear-gradient(135deg,#1e1b4b 0%,#4338ca 40%,#6366f1 70%,#a78bfa 100%);display:flex;align-items:center;justify-content:center;overflow:hidden;box-shadow:0 20px 60px rgba(0,0,0,.15);}
-.km-laptop-label{font-family:'Space Grotesk';font-weight:700;font-size:28px;color:rgba(255,255,255,.85);text-align:center;}
+.km-laptop img{width:100%;height:100%;object-fit:cover;object-position:top;display:block;}
+.km-phone img{width:100%;height:100%;object-fit:cover;object-position:top;display:block;}
 @media(max-width:640px){.km-laptop-label{font-size:20px;}}
 .km-phone{position:absolute;bottom:-12px;right:-16px;width:25%;aspect-ratio:9/19;border-radius:14px;border:2.5px solid rgba(251,191,36,.3);background:linear-gradient(160deg,#4338ca 0%,#7c3aed 50%,#a78bfa 100%);box-shadow:0 12px 32px rgba(0,0,0,.2);display:flex;align-items:center;justify-content:center;}
 .km-phone-label{font-family:'Space Grotesk';font-weight:700;font-size:11px;color:rgba(255,255,255,.8);}
@@ -418,9 +404,8 @@ footer{background:var(--bg-dark);color:#fff;padding-top:80px;}
     <div class="projects-grid">
 
       <div class="proj-card reveal">
-        <div class="mockup-wrap mock-kidsmin">
-          <div class="mock-laptop"><span class="mock-label">KidsMin</span></div>
-          <div class="mock-phone"></div>
+        <div class="proj-thumb">
+          <img src="img/kidsmin_desktop.png" alt="KidsMin" loading="lazy">
         </div>
         <div class="proj-body">
           <span class="proj-tag">React</span><span class="proj-tag">Supabase</span><span class="proj-tag" style="background:var(--warm-light);color:#92400e;">Producto propio</span>
@@ -431,22 +416,8 @@ footer{background:var(--bg-dark);color:#fff;padding-top:80px;}
       </div>
 
       <div class="proj-card reveal">
-        <div class="mockup-wrap mock-cocina">
-          <div class="mock-laptop"><span class="mock-label">Cocinas a Medida</span></div>
-          <div class="mock-phone"></div>
-        </div>
-        <div class="proj-body">
-          <span class="proj-tag">Webflow</span><span class="proj-tag">SEO</span>
-          <h3>Cocinas a Medida <a href="https://paloma-project-ii.webflow.io/" target="_blank">&#8599;</a></h3>
-          <p>Sitio web para negocio de cocinas y baños a medida.</p>
-          <a href="https://paloma-project-ii.webflow.io/" target="_blank" class="view-link">View Project &#8594;</a>
-        </div>
-      </div>
-
-      <div class="proj-card reveal">
-        <div class="mockup-wrap mock-pilot">
-          <div class="mock-laptop"><span class="mock-label">Pilot Academy</span></div>
-          <div class="mock-phone"></div>
+        <div class="proj-thumb">
+          <img src="img/websitepilot.png" alt="Pilot Academy" loading="lazy">
         </div>
         <div class="proj-body">
           <span class="proj-tag">Webflow</span><span class="proj-tag">UI/UX</span>
@@ -457,9 +428,8 @@ footer{background:var(--bg-dark);color:#fff;padding-top:80px;}
       </div>
 
       <div class="proj-card reveal">
-        <div class="mockup-wrap mock-flutter">
-          <div class="mock-laptop"><span class="mock-label">Biblioteca de Libros</span></div>
-          <div class="mock-phone"></div>
+        <div class="proj-thumb">
+          <img src="img/flutterui.png" alt="Biblioteca de Libros Online" loading="lazy">
         </div>
         <div class="proj-body">
           <span class="proj-tag">Flutter</span><span class="proj-tag">Mobile UI</span>
@@ -469,9 +439,8 @@ footer{background:var(--bg-dark);color:#fff;padding-top:80px;}
       </div>
 
       <div class="proj-card reveal">
-        <div class="mockup-wrap mock-essenza">
-          <div class="mock-laptop"><span class="mock-label">Essenza</span></div>
-          <div class="mock-phone"></div>
+        <div class="proj-thumb">
+          <img src="img/essenza_desktop.webp" alt="Essenza Spa" loading="lazy">
         </div>
         <div class="proj-body">
           <span class="proj-tag">React</span><span class="proj-tag">Supabase</span>
@@ -482,9 +451,8 @@ footer{background:var(--bg-dark);color:#fff;padding-top:80px;}
       </div>
 
       <div class="proj-card reveal">
-        <div class="mockup-wrap mock-jassir">
-          <div class="mock-laptop"><span class="mock-label">Jassir Music</span></div>
-          <div class="mock-phone"></div>
+        <div class="proj-thumb">
+          <img src="img/jassir_desktop.webp" alt="Jassir Music" loading="lazy">
         </div>
         <div class="proj-body">
           <span class="proj-tag">WordPress</span><span class="proj-tag">PayPal</span>
@@ -520,7 +488,7 @@ footer{background:var(--bg-dark);color:#fff;padding-top:80px;}
         </div>
       </div>
 
-      <div class="proj-card reveal" style="grid-column:1/-1;max-width:calc(50% - 11px);">
+      <div class="proj-card reveal">
         <div class="mockup-wrap mock-tropicana">
           <div class="mock-laptop"><span class="mock-label">Tropicana</span></div>
           <div class="mock-phone"></div>
@@ -554,8 +522,8 @@ footer{background:var(--bg-dark);color:#fff;padding-top:80px;}
       </div>
       <div class="km-visual reveal">
         <div class="km-mockup">
-          <div class="km-laptop"><span class="km-laptop-label">KidsMin</span></div>
-          <div class="km-phone"><span class="km-phone-label">App</span></div>
+          <div class="km-laptop"><img src="img/kidsmin_desktop.png" alt="KidsMin Desktop"></div>
+          <div class="km-phone"><img src="img/kidsmin_mobile.png" alt="KidsMin Mobile"></div>
         </div>
       </div>
     </div>
