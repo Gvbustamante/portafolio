@@ -148,15 +148,9 @@ nav{display:flex;align-items:center;justify-content:space-between;padding:16px 2
 .mock-phone{position:absolute;bottom:12px;right:18px;width:16%;aspect-ratio:9/19;border-radius:10px;border:2px solid rgba(255,255,255,.18);overflow:hidden;box-shadow:0 6px 20px rgba(0,0,0,.3);}
 @media(max-width:640px){.mockup-wrap{padding:16px;}.mock-phone{right:12px;bottom:10px;border-radius:7px;}}
 
-.mock-onetap .mock-laptop{background:linear-gradient(135deg,#166534,#22c55e,#4ade80);}
-.mock-onetap .mock-phone{background:linear-gradient(160deg,#15803d,#34d399);}
-.mock-onetap{background:linear-gradient(180deg,#ecf9f0,#ddf4e4);}
 .mock-sofia .mock-laptop{background:linear-gradient(135deg,#92400e,#f59e0b,#fbbf24);}
 .mock-sofia .mock-phone{background:linear-gradient(160deg,#b45309,#fbbf24);}
 .mock-sofia{background:linear-gradient(180deg,#fef9ec,#fdf0d5);}
-.mock-tropicana .mock-laptop{background:linear-gradient(135deg,#fb923c,#f472b6);}
-.mock-tropicana .mock-phone{background:linear-gradient(160deg,#f97316,#ec4899);}
-.mock-tropicana{background:linear-gradient(180deg,#fef0ec,#fde8e0);}
 
 .mock-label{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;font-family:'Space Grotesk';font-weight:700;font-size:14px;color:rgba(255,255,255,.75);text-align:center;padding:4px;pointer-events:none;}
 .mock-laptop img,.mock-phone img{width:100%;height:100%;object-fit:cover;display:block;}
@@ -463,9 +457,8 @@ footer{background:var(--bg-dark);color:#fff;padding-top:80px;}
       </div>
 
       <div class="proj-card reveal">
-        <div class="mockup-wrap mock-onetap">
-          <div class="mock-laptop"><span class="mock-label">OneTap Scan</span></div>
-          <div class="mock-phone"></div>
+        <div class="proj-thumb">
+          <img src="img/onetap_desktop.png" alt="OneTap Scan" loading="lazy">
         </div>
         <div class="proj-body">
           <span class="proj-tag">React</span>
@@ -489,9 +482,8 @@ footer{background:var(--bg-dark);color:#fff;padding-top:80px;}
       </div>
 
       <div class="proj-card reveal">
-        <div class="mockup-wrap mock-tropicana">
-          <div class="mock-laptop"><span class="mock-label">Tropicana</span></div>
-          <div class="mock-phone"></div>
+        <div class="proj-thumb">
+          <img src="img/tropicana_desktop.png" alt="Tropicana Gelato" loading="lazy">
         </div>
         <div class="proj-body">
           <span class="proj-tag">HTML</span><span class="proj-tag">CSS</span>
